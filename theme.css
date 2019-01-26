@@ -507,3 +507,7 @@ strong {
 .theme-light div[class^='uploadModal'] div[class^='footer'] button[type^='submit'] span {
     color: white;
 }
+
+.theme-light div[class^='uploadModal'] div[class^='comment'] span {
+    color: white;
+}
