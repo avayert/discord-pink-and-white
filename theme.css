@@ -442,3 +442,21 @@ input, input::placeholder, header, a, abbr, acronym, address, applet, big, block
 .theme-light div[class^='privateChannels'] div[class^='scroller'] {
     padding-top: 0px!important;
 }
+
+/* fix header colours */
+.theme-light div[class^="headerPlaying"] { 
+    background-color: #FF6B81; 
+}
+.theme-light div[class^="headerNormal"] { 
+    background-color: #FF6B81 !important; 
+}
+.theme-light div[class^="headerNameWrapper"] span[class^="headerName"] { 
+    color: white !important; 
+}
+/* note: important is needed for no-nickname variants */
+.theme-light div[class^="headerNormal"] span.username { 
+    color: white !important; 
+}
+.theme-light div[class^="headerNormal"] span.discriminator { 
+    color: white; 
+}
