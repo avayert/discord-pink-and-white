@@ -444,29 +444,33 @@ input, input::placeholder, header, a, abbr, acronym, address, applet, big, block
 }
 
 /* fix header colours */
-.theme-light div[class^="userPopout"] div[class^="headerPlaying"] { 
+.theme-light div[class^='userPopout'] div[class^='headerPlaying'] { 
     background-color: #FF6B81; 
 }
-.theme-light div[class^="userPopout"] div[class^="headerNormal"] { 
+.theme-light div[class^='userPopout'] div[class^='headerNormal'] { 
     background-color: #FF6B81 !important; 
 }
-.theme-light div[class^="userPopout"] div[class^="headerNameWrapper"] span[class^="headerName"] { 
+.theme-light div[class^='userPopout'] div[class^='headerNameWrapper'] span[class^='headerName'] { 
     color: white !important; 
 }
 /* note: important is needed for no-nickname variants */
-.theme-light div[class^="userPopout"] div[class^="headerNormal"] span.username { 
+.theme-light div[class^='userPopout'] div[class^='headerNormal'] span.username { 
     color: white !important; 
 }
-.theme-light div[class^="userPopout"] div[class^="headerNormal"] span.discriminator { 
+.theme-light div[class^='userPopout'] div[class^='headerNormal'] span.discriminator { 
     color: white; 
 }
 
 /* remove useless protip section */
-.theme-light div[class^="userPopout"] div[class^="footer"] input[class^="quickMessage"] {
+.theme-light div[class^='userPopout'] div[class^='footer'] input[class^='quickMessage'] {
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px
 }
-.theme-light div[class^="userPopout"] div[class^="footer"] { padding: 0; }
-.theme-light div[class^="userPopout"] div[class^="footer"] div[class^="protip"] { display: none; }
+.theme-light div[class^='userPopout'] div[class^='footer'] { 
+    padding: 0; 
+}
+.theme-light div[class^='userPopout'] div[class^='footer'] div[class^='protip'] { 
+    display: none; 
+}
