@@ -462,6 +462,11 @@ input, input::placeholder, header, a, abbr, acronym, address, applet, big, block
 }
 
 /* remove useless protip section */
-.theme-light div[class^="userPopout"] div[class^="footer"] div[class^="protip"] { 
-    display: none; 
+.theme-light div[class^="userPopout"] div[class^="footer"] input[class^="quickMessage"] {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px
 }
+.theme-light div[class^="userPopout"] div[class^="footer"] { padding: 0; }
+.theme-light div[class^="userPopout"] div[class^="footer"] div[class^="protip"] { display: none; }
