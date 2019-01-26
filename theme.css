@@ -490,20 +490,20 @@ strong {
 }
 
 /* Change upload modal */
-div[class^='uploadModal'] {
+.theme-light div[class^='uploadModal'] {
     background-color: #FF6B81;
 }
-div[class^='uploadModal'] div[class^='footer'] {
+.theme-light div[class^='uploadModal'] div[class^='footer'] {
     background-color: white;
 }
 /* cancel */
-div[class^='uploadModal'] div[class^='footer'] button:nth-child(1) span {
+.theme-light div[class^='uploadModal'] div[class^='footer'] button:nth-child(1) span {
     color: black;
 }
 /* upload */
-div[class^='uploadModal'] div[class^='footer'] button[type^='submit'] {
+.theme-light div[class^='uploadModal'] div[class^='footer'] button[type^='submit'] {
     background-color: #FF6B81;
 }
-div[class^='uploadModal'] div[class^='footer'] button[type^='submit'] span {
+.theme-light div[class^='uploadModal'] div[class^='footer'] button[type^='submit'] span {
     color: white;
 }
