@@ -472,7 +472,7 @@ strong {
     color: white !important; 
 }
 .theme-light div[class^='userPopout'] div[class^='headerNormal'] span.discriminator { 
-    color: white; 
+    color: white;
 }
 
 /* remove useless protip section */
@@ -487,4 +487,34 @@ strong {
 }
 .theme-light div[class^='userPopout'] div[class^='footer'] div[class^='protip'] { 
     display: none; 
+}
+
+/* Change upload modal */
+.theme-light div[class^='uploadModal'] {
+    background-color: #FF6B81;
+}
+.theme-light div[class^='uploadModal'] div[class^='footer'] {
+    background-color: white;
+}
+/* cancel */
+.theme-light div[class^='uploadModal'] div[class^='footer'] button:nth-child(1) span {
+    color: black;
+}
+/* upload */
+.theme-light div[class^='uploadModal'] div[class^='footer'] button[type^='submit'] {
+    background-color: #FF6B81;
+}
+.theme-light div[class^='uploadModal'] div[class^='footer'] button[type^='submit'] span {
+    color: white;
+}
+/* make comment text white always */
+.theme-light div[class^='uploadModal'] div[class^='comment'] span {
+    color: white;
+}
+/* remove blue borders */
+.theme-light div[class^='uploadModal'] div[class^='inner'] {
+    border: none;
+}
+.theme-light div[class^='uploadModal'] div[class^='icon'] {
+    border: none;
 }
