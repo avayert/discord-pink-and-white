@@ -314,7 +314,7 @@ input, input::placeholder, header, a, abbr, acronym, address, applet, big, block
 .theme-light div[class^='nameDefault'],
 /* Regular channel name */
 .theme-light div[class^='nameDefaultText'] {
-    color: #737373;
+    color: #8C8C8C;
 }
 
 /* Muted channel */
@@ -341,7 +341,7 @@ input, input::placeholder, header, a, abbr, acronym, address, applet, big, block
 .theme-light svg[class^='colorDefaultText'],
 /* Unread too */
 .theme-light svg[class^='colorUnreadText'] {
-    color: #737373;
+    color: #8C8C8C;
 }
 
 /* Same but selected */
@@ -423,7 +423,7 @@ input, input::placeholder, header, a, abbr, acronym, address, applet, big, block
 
 /* Text box text when u type */
 .theme-light div[class^='channelTextArea'] div[class^='inner'] textarea {
-    color: #737373;
+    color: #8C8C8C;
 }
 
 /* Attach file button */
