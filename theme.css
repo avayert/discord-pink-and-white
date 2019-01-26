@@ -472,7 +472,7 @@ strong {
     color: white !important; 
 }
 .theme-light div[class^='userPopout'] div[class^='headerNormal'] span.discriminator { 
-    color: white; 
+    color: white;
 }
 
 /* remove useless protip section */
@@ -487,4 +487,23 @@ strong {
 }
 .theme-light div[class^='userPopout'] div[class^='footer'] div[class^='protip'] { 
     display: none; 
+}
+
+/* Change upload modal */
+div[class^='uploadModal'] {
+    background-color: #FF6B81;
+}
+div[class^='uploadModal'] div[class^='footer'] {
+    background-color: white;
+}
+/* cancel */
+div[class^='uploadModal'] div[class^='footer'] button:nth-child(1) span {
+    color: black;
+}
+/* upload */
+div[class^='uploadModal'] div[class^='footer'] button[type^='submit'] {
+    background-color: #FF6B81;
+}
+div[class^='uploadModal'] div[class^='footer'] button[type^='submit'] span {
+    color: white;
 }
