@@ -460,3 +460,8 @@ input, input::placeholder, header, a, abbr, acronym, address, applet, big, block
 .theme-light div[class^="headerNormal"] span.discriminator { 
     color: white; 
 }
+
+/* remove useless protip section */
+.theme-light div[class^="userPopout"] div[class^="footer"] div[class^="protip"] { 
+    display: none; 
+}
