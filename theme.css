@@ -444,20 +444,20 @@ input, input::placeholder, header, a, abbr, acronym, address, applet, big, block
 }
 
 /* fix header colours */
-.theme-light div[class^="headerPlaying"] { 
+.theme-light div[class^="userPopout"] div[class^="headerPlaying"] { 
     background-color: #FF6B81; 
 }
-.theme-light div[class^="headerNormal"] { 
+.theme-light div[class^="userPopout"] div[class^="headerNormal"] { 
     background-color: #FF6B81 !important; 
 }
-.theme-light div[class^="headerNameWrapper"] span[class^="headerName"] { 
+.theme-light div[class^="userPopout"] div[class^="headerNameWrapper"] span[class^="headerName"] { 
     color: white !important; 
 }
 /* note: important is needed for no-nickname variants */
-.theme-light div[class^="headerNormal"] span.username { 
+.theme-light div[class^="userPopout"] div[class^="headerNormal"] span.username { 
     color: white !important; 
 }
-.theme-light div[class^="headerNormal"] span.discriminator { 
+.theme-light div[class^="userPopout"] div[class^="headerNormal"] span.discriminator { 
     color: white; 
 }
 
