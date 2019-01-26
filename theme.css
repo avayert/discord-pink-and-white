@@ -453,6 +453,11 @@ strong {
     background-color: white;
 }
 
+/* Makes the activity part of the user popup not be any darker */
+.theme-light div[class^='activityUserPopout'] {
+    background-color: rgba(0, 0, 0, 0);
+}
+
 .theme-light div[class^='userPopout'] div[class^='headerNameWrapper'] span[class^='headerName'] { 
     color: white !important; 
 }
