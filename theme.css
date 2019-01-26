@@ -450,6 +450,13 @@ input, input::placeholder, header, a, abbr, acronym, address, applet, big, block
 .theme-light div[class^='userPopout'] div[class^='headerNormal'] { 
     background-color: #FF6B81 !important; 
 }
+.theme-light div[class^='userPopout'] div[class^='headerSpotify'] {
+    background-color: #FF6B81 !important;
+}
+.theme-light div[class^='topSectionSpotify'] div[class^='tabBar'] {
+    background-color: white;
+}
+
 .theme-light div[class^='userPopout'] div[class^='headerNameWrapper'] span[class^='headerName'] { 
     color: white !important; 
 }
