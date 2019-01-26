@@ -507,7 +507,14 @@ strong {
 .theme-light div[class^='uploadModal'] div[class^='footer'] button[type^='submit'] span {
     color: white;
 }
-
+/* make comment text white always */
 .theme-light div[class^='uploadModal'] div[class^='comment'] span {
     color: white;
+}
+/* remove blue borders */
+.theme-light div[class^='uploadModal'] div[class^='inner'] {
+    border: none;
+}
+.theme-light div[class^='uploadModal'] div[class^='icon'] {
+    border: none;
 }
