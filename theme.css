@@ -125,7 +125,8 @@ strong {
 }
 
 /* Hides the video and call buttons in DMs */
-.theme-light div[class*='headerBar'] div[class*='flex'] div:not([class]) {
+.theme-light svg[name='Phone'],
+.theme-light svg[name='VideoCamera'] {
     display: none;
 }
 
