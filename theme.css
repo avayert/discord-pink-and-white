@@ -32,8 +32,8 @@ strong {
 /* Gets rid of the message divider */
 .theme-light hr[class^='dividerEnabled'],
 /* Gets rid of the gift box and GIF buttons on the chat box */
-.theme-light div[class^='buttons'] button[tabindex="2"],
-.theme-light div[class^='buttons'] div[class^="buttonContainer"] {
+.theme-light div[class^='buttons'] button[tabindex='2'],
+.theme-light div[class^='buttons'] div[class^='buttonContainer'] {
     display: none;
 }
 
@@ -91,7 +91,7 @@ strong {
 }
 
 /* Remove STUPID FUCKING rounding thing */
-.theme-light div[class*="base"] {
+.theme-light div[class*='base'] {
     border-radius: 0;
 }
 
@@ -121,6 +121,11 @@ strong {
 .theme-light svg[name='Pin'] + span[class^='iconBadge']:hover,
 .theme-light div[class^='titleWrapper'] span[class^='icon'] svg:hover {
     opacity: 1!important;
+}
+
+/* Hides the video and call buttons in DMs */
+.theme-light div[class*='headerBar'] div[class*='flex'] div:not([class]) {
+    display: none;
 }
 
 /* Seach box magnifying glass */
@@ -579,4 +584,13 @@ strong {
 .theme-light div[class^='isMentioned']::after {
     background-color: rgba(255, 107, 129, 0.4);
     border-left: 4px solid #FF6B81;
+}
+
+
+/* Changes the @ in DMs before the name */
+.theme-light div[class*='headerBar'] span[class*='channelName'] svg[name='At'] {
+    display: none;
+}
+.theme-light div[class*='headerBar'] span[class*='channelName']:before {
+    content: '@'; font-weight: 600;
 }
