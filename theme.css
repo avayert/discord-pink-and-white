@@ -496,6 +496,12 @@ strong {
     background-color: rgba(0, 0, 0, 0);
 }
 
+/* Hyperlinks in activities should be white or they blend in with the background */
+.theme-light div[class^='activityUserPopout'] a {
+    color: white!important;
+    font-weight: 400!important;
+}
+
 .theme-light div[class^='userPopout'] div[class^='headerNameWrapper'] span[class^='headerName'] { 
     color: white !important; 
 }
