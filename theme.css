@@ -43,11 +43,6 @@ strong {
     background-color: rgba(255, 255, 255, 0.6)!important;
 }
 
-/* TODO make icons for these, need right colour
-.theme-light div[class^='search'] i[class*='EyeGlass'][class*='visible'] {
-    background-color: red;
-}
-
 /* TODO Change the search box text colours */
 /* TODO also change the real search box, not just DM */
 .theme-light div[class^='searchBarInner'] input::placeholder {
@@ -115,6 +110,33 @@ strong {
     color: white;
 }
 
+
+/* The ring that shows you have unread pins */
+.theme-light svg[name='Pin'] + span[class^='iconBadge'],
+/* Icons in the top bar in chat */
+.theme-light div[class^='titleWrapper'] span[class^='icon'] svg {
+    opacity: 0.8!important;
+}
+
+.theme-light svg[name='Pin'] + span[class^='iconBadge']:hover,
+.theme-light div[class^='titleWrapper'] span[class^='icon'] svg:hover {
+    opacity: 1!important;
+}
+
+/* Seach box magnifying glass */
+.theme-light div[class^='search'] i[class*='EyeGlass'][class*='visible'] {
+    /* Material icons search */
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAAArElEQVR4Aa3KgUaDYRSA4VOEUkmgCIAgIAACIqSLSAwYQICuoQbARAgiBArBgDApgIDwgVIbjJlnMJvfGRv2AC9vLJ51F17dq9mM6ez7RcenvuI4Mqu+FOfWIuxo6TnIUx1n49pQPObpwV+l7/zk6dlHpa/956lhYHfS3r3k6RAtW6Oq4SgyVyiabrTxrW4pMqfa6Hpz4hLN6pZY8TTPtuxW3jINxV7MYjsWbAiTZYLHg0wjYgAAAABJRU5ErkJggg==');
+    opacity: 0.8!important;
+}
+
+/* Seach box cancel button after typing query */
+.theme-light div[class^='search'] i[class*='BarClear'][class*='visible'] {
+    /* Material icons cancel */
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAAAvklEQVR4AZXSAQaDUBzH8YCgK2yD3WTAGrFJmN2izpCOsI4wlE6wjlA3SczY1HfTD3vUog/4q6/e817WQqyIKGloKIlYjQOHnB5TT45jJjY1U2rsX5TyT2oJWzoAbgRo6ggo0LRVFCPed/Z48xqmIxIrqhC9PLBTjNSKnoB0+MOTMx0gD0XtKPKNqJ1azsWdWi5B9ubGOSGJog36eMFl4gjWlnCdPUzBppq9FsEhG11whi7YxJpQvwp3Qu1lgQ+5p3w6irRAlQAAAABJRU5ErkJggg==');
+    opacity: 0.8!important;
+}
+
 /* Server name */
 .theme-light header span[class^='name'] {
     font-family: 'Raleway';
@@ -125,7 +147,6 @@ strong {
 .theme-light div[class^='titleText'] span[class^='channelName'] {
     font-weight: 500!important;
 }
-
 
 
 
