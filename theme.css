@@ -321,6 +321,10 @@ strong {
 /* Selected channel */
 .theme-light div[class^='contentSelectedText'] {
     background-color: #EBEBEB;
+}
+
+/* Make selected channel underlines */
+.theme-light div[class^='contentSelectedText'] {
     text-decoration: underline;
 }
 
