@@ -538,6 +538,16 @@ strong {
     color: white;
 }
 
+/* In channel descriptions */
+.theme-light div[class^='topic'] span[class*='wrapper'] {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+.theme-light div[class^='topic'] span[class*='wrapper']:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #FF6B81;
+}
 
 /* Message that mentions you */
 .theme-light div[class^='isMentioned'] {
