@@ -593,6 +593,7 @@ strong {
 .theme-light div[class*='headerBar'] span[class*='channelName'] svg[name='At'] {
     display: none;
 }
-.theme-light div[class*='headerBar'] span[class*='channelName']:before {
-    content: '@'; font-weight: 600;
+.theme-light div[class*='headerBar'] span[class*='channelName'][tabindex]:before {
+    content: '@';
+    font-weight: 600;
 }
