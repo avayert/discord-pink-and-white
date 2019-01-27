@@ -577,12 +577,12 @@ strong {
 
 /* Message that mentions you */
 .theme-light div[class^='isMentioned'] {
-    background-color: rgba(255, 107, 129, 0.4);
+    background-color: rgba(255, 107, 129, 0.15);
 }
 
 /* The bar on the left */
 .theme-light div[class^='isMentioned']::after {
-    background-color: rgba(255, 107, 129, 0.4);
+    background-color: rgba(255, 107, 129, 0.15);
     border-left: 4px solid #FF6B81;
 }
 
