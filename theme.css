@@ -467,6 +467,7 @@ strong {
 .theme-light div[class^='userPopout'] div[class^='headerNameWrapper'] span[class^='headerName'] { 
     color: white !important; 
 }
+
 /* note: important is needed for no-nickname variants */
 .theme-light div[class^='userPopout'] div[class^='headerNormal'] span.username { 
     color: white !important; 
@@ -489,6 +490,7 @@ strong {
     display: none; 
 }
 
+
 /* Change upload modal */
 .theme-light div[class^='uploadModal'] {
     background-color: #FF6B81;
@@ -496,10 +498,12 @@ strong {
 .theme-light div[class^='uploadModal'] div[class^='footer'] {
     background-color: white;
 }
+
 /* cancel */
 .theme-light div[class^='uploadModal'] div[class^='footer'] button:nth-child(1) span {
     color: black;
 }
+
 /* upload */
 .theme-light div[class^='uploadModal'] div[class^='footer'] button[type^='submit'] {
     background-color: #FF6B81;
@@ -507,14 +511,41 @@ strong {
 .theme-light div[class^='uploadModal'] div[class^='footer'] button[type^='submit'] span {
     color: white;
 }
+
 /* make comment text white always */
 .theme-light div[class^='uploadModal'] div[class^='comment'] span {
     color: white;
 }
+
 /* remove blue borders */
 .theme-light div[class^='uploadModal'] div[class^='inner'] {
     border: none;
 }
 .theme-light div[class^='uploadModal'] div[class^='icon'] {
-    border: none;
+    /* Needs important for some reason */
+    border: none!important;
+}
+
+
+/* Member / channel mention */
+.theme-light div[class^='markup'] span[class*='wrapper'] {
+    background-color: rgba(255, 107, 129, 0.15);
+    color: #FF6B81;
+}
+
+.theme-light div[class^='markup'] span[class*='wrapper']:hover {
+    background-color: #FF6B81;
+    color: white;
+}
+
+
+/* Message that mentions you */
+.theme-light div[class^='isMentioned'] {
+    background-color: rgba(255, 107, 129, 0.4);
+}
+
+/* The bar on the left */
+.theme-light div[class^='isMentioned']::after {
+    background-color: rgba(255, 107, 129, 0.4);
+    border-left: 4px solid #FF6B81;
 }
