@@ -40,14 +40,6 @@ strong {
 
 
 
-.theme-light div[class^='searchBarInner'] {
-    background-color: rgba(255, 255, 255, 0.6)!important;
-}
-
-/* TODO Change the search box text colours */
-.theme-light div[class^='searchBarInner'] input::placeholder {
-    color: rgba(255, 255, 255, 0.7)!important;
-}
 
 
 /* Changes hyperlinks in chat */
@@ -225,9 +217,6 @@ strong {
     border: 1px solid #D9D9D9;
 }
 
-/* TODO custom hljs theme */
-
-
 
 /* Adds the pink thing to the left too */
 .theme-light div[class^='guildsWrapper'] {
@@ -289,8 +278,6 @@ strong {
 .theme-light div[class^='accountDetails'] + div[class^='flex'] button[aria-label='User Settings'] {
     opacity: 0.90;
 }
-/* TODO figure out the hovers */
-
 
 
 /* DM rich presence icon */
@@ -413,7 +400,6 @@ strong {
 
 
 /* New guild button */
-/* TODO style more */
 .theme-light button[class*='guildsAdd'] {
     background-color: white;
 }
@@ -619,4 +605,28 @@ strong {
     background-color: #FF6B81;
     color: white;
     font-weight: 600!important;
+}
+
+/* Channel search box text */
+div[data-block='true'] {
+    color: white;
+}
+
+/* Channel search box text */
+div[class='public-DraftEditorPlaceholder-inner'] {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* Change the DM search box background colours */
+.theme-light div[class^='searchBarInner'] {
+    /* lol no consistency */
+    background-color: rgba(255, 255, 255, 0.5)!important;
+    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+}
+
+/* Change the DM search box text colours */
+.theme-light div[class^='searchBarInner'] input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
