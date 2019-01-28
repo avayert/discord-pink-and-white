@@ -608,3 +608,10 @@ strong {
     content: '@';
     font-weight: 600;
 }
+
+/* Mention amount box */
+.theme-light div[class^='guildsWrapper'] div[class*='badge'] {
+    background-color: #FF6B81;
+    color: white;
+    font-weight: 600!important;
+}
