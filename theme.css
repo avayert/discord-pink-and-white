@@ -602,6 +602,7 @@ strong {
 
 /* Mention amount box */
 .theme-light div[class^='guildsWrapper'] div[class*='badge'] {
+    border-radius: 10px!important;
     background-color: #FF6B81;
     color: white;
     font-weight: 600!important;
