@@ -45,11 +45,9 @@ strong {
 }
 
 /* TODO Change the search box text colours */
-/* TODO also change the real search box, not just DM */
 .theme-light div[class^='searchBarInner'] input::placeholder {
     color: rgba(255, 255, 255, 0.7)!important;
 }
-
 
 
 /* Changes hyperlinks in chat */
@@ -100,8 +98,7 @@ strong {
  * white for contrast with the pink colour */
 .theme-light span[class^='channelName'],
 .theme-light div[class^='topic'],
-.theme-light svg[class^='channelIcon'],
-.theme-light svg[name^='Pin'] path, /* TODO fix the pin ring */
+.theme-light svg[name^='Pin'] path,
 .theme-light svg[name^='Phone'] path,
 .theme-light svg[name^='People'] path,
 .theme-light svg[name^='Mention'] path,
@@ -406,7 +403,6 @@ strong {
 }
 
 /* Guild background */
-/* TODO hover and selected */
 .theme-light div[class^='guildInner'] {
     background-color: #FF6B81!important;
 }
@@ -607,6 +603,15 @@ strong {
 .theme-light div[class*='headerBar'] span[class*='channelName'][tabindex]:before {
     content: '@';
     font-weight: 600;
+}
+
+/* Changes the # in channel before the name */
+.theme-light div[class*='titleText'] span[class*='channelName'] svg[class^='channelIcon'] {
+    display: none;
+}
+.theme-light div[class*='headerBar'] span[class*='channelName']:not([tabindex]):before {
+    content: '#';
+    font-weight: 500;
 }
 
 /* Mention amount box */
