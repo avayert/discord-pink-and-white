@@ -485,6 +485,12 @@ strong {
     font-weight: 400!important;
 }
 
+/* Mobile indicators in user pop-outs */
+.theme-light div[class*='userSelectText'] path,
+.theme-light div[class*='nameWithMobileIndicator'] path {
+    fill: white;
+}
+
 .theme-light div[class^='userPopout'] div[class^='headerNameWrapper'] span[class^='headerName'] { 
     color: white !important; 
 }
