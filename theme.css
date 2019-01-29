@@ -653,3 +653,7 @@ div[class='public-DraftEditorPlaceholder-inner'] {
 .theme-light div[class^='searchBarInner'] input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
+
+.theme-light div[class*='scroller'][class*='messages']::-webkit-scrollbar-thumb {
+    background-color: #FF6B81!important;
+}
