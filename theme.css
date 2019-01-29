@@ -460,6 +460,9 @@ strong {
     padding-top: 0px!important;
 }
 
+
+/* Smaller profile box */
+
 /* fix header colours */
 .theme-light div[class^='userPopout'] div[class^='headerPlaying'] { 
     background-color: #FF6B81; 
@@ -470,9 +473,6 @@ strong {
 .theme-light div[class^='userPopout'] div[class^='headerSpotify'] {
     background-color: #FF6B81 !important;
 }
-.theme-light div[class^='topSectionSpotify'] div[class^='tabBar'] {
-    background-color: white;
-}
 
 /* Makes the activity part of the user popup not be any darker */
 .theme-light div[class^='activityUserPopout'] {
@@ -480,6 +480,7 @@ strong {
 }
 
 /* Hyperlinks in activities should be white or they blend in with the background */
+.theme-light div[class*='activityProfile'] a,
 .theme-light div[class^='activityUserPopout'] a {
     color: white!important;
     font-weight: 400!important;
@@ -515,6 +516,21 @@ strong {
 }
 .theme-light div[class^='userPopout'] div[class^='footer'] div[class^='protip'] { 
     display: none; 
+}
+
+
+/* Bigger profile box */
+
+.theme-light div[class*='topSectionPlaying'] div[class*='activityProfile'],
+.theme-light div[class*='topSectionSpotify'] div[class*='activityProfile'],
+.theme-light div[class*='topSectionNormal'] header,
+.theme-light div[class*='topSectionPlaying'] header,
+.theme-light div[class*='topSectionSpotify'] header {
+    background-color: #FF6B81;
+}
+
+.theme-light div[class*='tabBarContainer'] {
+    background-color: white;
 }
 
 
