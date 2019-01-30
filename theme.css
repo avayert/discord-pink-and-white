@@ -657,3 +657,9 @@ div[class='public-DraftEditorPlaceholder-inner'] {
 .theme-light div[class*='scroller'][class*='messages']::-webkit-scrollbar-thumb {
     background-color: #FF6B81 !important;
 }
+
+.theme-light div[class^='unread'] div[class*='bar'] {
+    background-color: #FF6B81;
+    color: white;
+    box-shadow: none;
+}
