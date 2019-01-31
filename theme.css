@@ -169,7 +169,7 @@ strong {
 
 /* The MARK AS READ text */
 .theme-light div[class^='newMessagesBar'] button:last-child {
-    color: #FF6B81;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Make it white when hovered like discord */
