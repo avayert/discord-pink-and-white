@@ -537,6 +537,14 @@ strong {
     display: none;
 }
 
+.theme-light div[class*='topSectionNormal'] span[class^='username'] {
+    color: white !important;
+}
+
+.theme-light div[class*='topSectionNormal'] span[class^='discriminator'] {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
 
 /* Change upload modal */
 .theme-light div[class^='uploadModal'] {
