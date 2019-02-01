@@ -698,7 +698,7 @@ div[class='public-DraftEditorPlaceholder-inner'] {
     border: 2px solid black;
 }
 
-.theme-light span[class^='spoilerText'] span {
+.theme-light span[class^='spoilerText'] span[class^='inlineContent'] {
     color: white;
     font-weight: 400 !important;
 }
