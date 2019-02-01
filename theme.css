@@ -533,6 +533,10 @@ strong {
     background-color: white;
 }
 
+.theme-light div[class^='profileBadgeWrapper'] {
+    display: none;
+}
+
 
 /* Change upload modal */
 .theme-light div[class^='uploadModal'] {
