@@ -691,3 +691,14 @@ div[class='public-DraftEditorPlaceholder-inner'] {
     background-color: rgba(255, 107, 129, 0.7);
     color: white;
 }
+
+
+.theme-light span[class^='spoilerText'] {
+    background-color: black !important;
+    border: 2px solid black;
+}
+
+.theme-light span[class^='spoilerText'] span {
+    color: white;
+    font-weight: 400 !important;
+}
