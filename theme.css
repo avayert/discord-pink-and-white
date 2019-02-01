@@ -546,6 +546,16 @@ strong {
 }
 
 
+.theme-light button[class*='colorGreen'] {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.theme-light button[class*='colorGreen']:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+
 /* Change upload modal */
 .theme-light div[class^='uploadModal'] {
     background-color: #FF6B81;
