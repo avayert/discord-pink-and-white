@@ -687,7 +687,7 @@ div[class='public-DraftEditorPlaceholder-inner'] {
 }
 
 
-::selection {
+.theme-light ::selection {
     background-color: rgba(255, 107, 129, 0.7);
     color: white;
 }
