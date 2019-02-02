@@ -214,7 +214,6 @@ strong {
 .theme-light div[class^='markup'] code,
 .theme-light div[class^='markup'] code.inline {
     background-color: #F6F6F6 !important;
-    border: 1px solid #D9D9D9;
 }
 
 
@@ -701,4 +700,60 @@ div[class='public-DraftEditorPlaceholder-inner'] {
 .theme-light span[class^='spoilerText'] span[class^='inlineContent'] {
     color: white;
     font-weight: 400 !important;
+}
+
+
+.theme-light .hljs {
+    color: #727272 !important;
+}
+
+.theme-light .hljs-comment {
+    color: #8C8C8C !important;
+}
+
+.hljs-selector-pseudo,
+.hljs-keyword {
+    color: #FF6B81 !important;
+}
+
+.hljs-section,
+.hljs-title,
+.hljs-selector-tag,
+.hljs-selector-attr,
+.hljs-built_in,
+.hljs-subst,
+.hljs-class .hljs-title,
+.hljs-deletion,
+.hljs-variable,
+.hljs-literal {
+    color: #B2394B !important;
+}
+
+.hljs-regexp,
+.hljs-doctag,
+.hljs-string,
+.hljs-number,
+.hljs-addition {
+    color: #20BF9A !important;
+}
+
+.hljs-attribute,
+.hljs-meta {
+    color: #41A1CC !important;
+}
+
+/*
+These are black so it is obvious when they are missing
+*/
+.hljs-quote,
+.hljs-type,
+.hljs-name,
+.hljs-template-variable,
+.hljs-selector-id,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-formula,
+.hljs-attr {
+    color: black !important;
 }
