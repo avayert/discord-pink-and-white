@@ -181,7 +181,7 @@ strong {
 .theme-light div[class^='hasMore'] button {
     background-color: white;
     color: #FF6B81;
-    border: 1px solid #EBEBEB;
+    border: 1px solid #F6F6F6;
 }
 
 
@@ -213,7 +213,7 @@ strong {
 /* Code and mono box part 2 this is different u can test urself if u dont believe me */
 .theme-light div[class^='markup'] code,
 .theme-light div[class^='markup'] code.inline {
-    background-color: #F2F2F2;
+    background-color: #F6F6F6 !important;
     border: 1px solid #D9D9D9;
 }
 
@@ -298,7 +298,7 @@ strong {
 .theme-light div[class^='privateChannels'] div[class^='channel']:hover a,
 /* Hovered channel */
 .theme-light div[class^='contentHoveredText'] {
-    background-color: #F2F2F2;
+    background-color: #F6F6F6;
 }
 
 /* Selected DM */
@@ -430,7 +430,7 @@ strong {
 
 /* Chat box colour */
 .theme-light div[class^='channelTextArea'] div[class^='inner'] {
-    background-color: #EBEBEB;
+    background-color: #F6F6F6;
 }
 
 /* The placeholder text it says before u type */
