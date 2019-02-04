@@ -724,6 +724,7 @@ div[class='public-DraftEditorPlaceholder-inner'] {
 .hljs-subst,
 .hljs-class .hljs-title,
 .hljs-deletion,
+.hljs-symbol,
 .hljs-variable,
 .hljs-literal {
     color: #B2394B !important;
@@ -750,7 +751,6 @@ These are black so it is obvious when they are missing
 .hljs-name,
 .hljs-template-variable,
 .hljs-selector-id,
-.hljs-symbol,
 .hljs-bullet,
 .hljs-link,
 .hljs-formula,
