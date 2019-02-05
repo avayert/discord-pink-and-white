@@ -652,12 +652,12 @@ strong {
 }
 
 /* Channel search box text */
-div[data-block='true'] {
+.theme-light div[data-block='true'] {
     color: white;
 }
 
 /* Channel search box text */
-div[class='public-DraftEditorPlaceholder-inner'] {
+.theme-light div[class='public-DraftEditorPlaceholder-inner'] {
     color: rgba(255, 255, 255, 0.6);
 }
 
