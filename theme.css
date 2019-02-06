@@ -278,6 +278,9 @@ strong {
     opacity: 0.90;
 }
 
+.theme-light div[class^='accountDetails'] + div[class^='flex'] button:hover {
+    background-color: #EBEBEB;
+}
 
 /* DM rich presence icon */
 .theme-light div[class^='privateChannels'] div[class^='channel'] path[class^='activityIconForeground'],
