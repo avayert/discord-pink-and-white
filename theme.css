@@ -742,6 +742,7 @@ strong {
 }
 
 .theme-light .hljs-attribute,
+.theme-light .hljs-attr,
 .theme-light .hljs-meta {
     color: #41A1CC !important;
 }
@@ -756,8 +757,7 @@ These are black so it is obvious when they are missing
 .theme-light .hljs-selector-id,
 .theme-light .hljs-bullet,
 .theme-light .hljs-link,
-.theme-light .hljs-formula,
-.theme-light .hljs-attr {
+.theme-light .hljs-formula {
     color: black !important;
 }
 
