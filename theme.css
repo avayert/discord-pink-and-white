@@ -453,9 +453,30 @@ strong {
 
 
 /* Friends button */
-.theme-light a[href='/channels/@me'] {
-    display: none;
+.theme-light div[class^='privateChannels'] div[class^='scroller'] span div[class*='channel']:nth-child(1) {
+    margin-bottom: -15px;
+    margin-top: 5px;
 }
+
+.theme-light div[class^='privateChannels'] div[class^='scroller'] span div[class*='channel']:nth-child(1):hover div[class*='name'] {
+    color: #8C8C8C !important;
+}
+
+.theme-light div[class^='privateChannels'] div[class^='scroller'] span div[class*='channel'][class*='selected']:nth-child(1) div[class*='name'],
+.theme-light div[class^='privateChannels'] div[class^='scroller'] span div[class*='channel']:nth-child(1):hover div[class*='name'] {
+    color: #333333 !important;
+}
+
+.theme-light svg[name='PersonWaving'] {
+    padding-bottom: 8px;
+}
+
+.theme-light svg[name='PersonWaving'] path {
+    /* Material icons group */
+    d: path("M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z");
+    color: #8C8C8C;
+}
+
 
 /* Remove padding above where friends button was */
 .theme-light div[class^='privateChannels'] div[class^='scroller'] {
