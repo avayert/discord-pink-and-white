@@ -788,17 +788,3 @@ These are black so it is obvious when they are missing
 .theme-light .hljs-formula {
     color: black !important;
 }
-
-.theme-light div[class^='searchLearnMore'] {
-    display: none;
-}
-
-/* FUCK this */
-.theme-light div[role='dialog'][class^='noArrow'] {
-    transform: translateX(-74%) !important;
-}
-
-.theme-light div[class*='search-'][class*='focused-'] div[class*='searchBar-'] {
-    width: 320px;
-}
-/* I'm so fucking DONE fix the rest of this shit later i hate discord,,,,,, */
