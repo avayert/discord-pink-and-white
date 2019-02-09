@@ -34,16 +34,6 @@ div[class^='uploadModal'] {
             color: white;
         }
 
-        // remove blue borders from modal
-        div[class^='inner'] {
-            border: none;
-        }
-
-        div[class^='icon'] {
-            // Needs important for some reason
-            border: none !important;
-        }
-
         // fix spoiler checkbox
         label[class^='checkboxWrapper'] {
             div[class^='white'] {
@@ -56,6 +46,21 @@ div[class^='uploadModal'] {
                     border-color: $main-colour !important;
                 }
             }
+            svg[name='Checkmark'] {
+                polyline {
+                    stroke: $main-colour !important;
+                }
+            }
         }
+    }
+
+    // remove blue borders from modal
+    div[class^='inner'] {
+        border: none !important;
+    }
+
+    div[class^='icon'] {
+        // Needs important for some reason
+        border: none !important;
     }
 }
