@@ -46,9 +46,12 @@ div[class^='uploadModal'] {
                     border-color: $main-colour !important;
                 }
             }
-            svg[name='Checkmark'] {
-                polyline {
-                    stroke: $main-colour !important;
+
+            div[class*='checked'] {
+                svg[name='Checkmark'] {
+                    polyline {
+                        stroke: $main-colour !important;
+                    }
                 }
             }
         }
