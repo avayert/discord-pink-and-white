@@ -56,6 +56,9 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
     // HLJS
     @import "partials/hljs.scss";
 
+    // Hyperlinks
+    @import "partials/hyperlinks.scss";
+
     // Custom tweaks
     @import "custom.scss";
 
@@ -94,18 +97,6 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
     path {
         opacity: 1;
     }
-
-    // Changes the colour of hyperlinks.
-    a {
-        color: $hyperlink-colour !important;
-    }
-
-    // Changes the colour of hyperlinks in the topic.
-    div[class^='topic'] a {
-        color: white !important;
-        text-decoration: underline;
-    }
-
 
     /* The user info stuff at the bottom */
     /* The username and discrim */
