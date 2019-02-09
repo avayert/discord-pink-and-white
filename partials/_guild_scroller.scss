@@ -7,6 +7,13 @@ div[class^='guildsWrapper'] {
         color: #404040;
     }
 
+    // Show selected guild even when all channels are
+    div[class^='scroller'] {
+        div[class*='selected']::before {
+            background-color: $main-colour;
+        }
+    }
+
     // Gives the house icon a white background.
     div[class^='guild']:first-child div[class^='guildInner'] {
         background-color: white !important;

@@ -1,7 +1,6 @@
-
 // Fix buttons at the bottom
 div[class^='accountDetails'] + div[class^='flex'] {
-    // change some icons to material icons
+    // Change some icons to material icons
     $_image_names: (
         Unmute: $image-unmute,
         Mute: $image-mute,
@@ -16,7 +15,7 @@ div[class^='accountDetails'] + div[class^='flex'] {
         }
     }
     
-    // settings icon/button
+    // Settings icon/button
     svg[name='Gear'] {
         color: black;
     }
@@ -25,7 +24,7 @@ div[class^='accountDetails'] + div[class^='flex'] {
     }
 
 
-    // change all hovers 
+    // Change all hovers 
     &:hover {
         background-color: #EBEBEB;
     }

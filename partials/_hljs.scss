@@ -1,7 +1,5 @@
 // Custom HLJS theme.
-@if $disable-custom-hljs {
-
-} @else {
+@if $custom-hljs {
     .hljs {
         color: #727272 !important;
     }
@@ -54,5 +52,4 @@
     .hljs-formula {
         color: black !important;
     }
-    
 }

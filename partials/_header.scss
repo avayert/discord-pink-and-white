@@ -25,7 +25,7 @@ div[class='public-DraftEditorPlaceholder-inner'] {
 }
 
 // This is that line to the right of the search box
-// This is that line between the channel name and topic text
+// and that line between the channel name and topic text
 div {
     &[class^='titleWrapper'] div[class^='divider'], &[class^='topic']::before {
       background-color: rgba(255, 255, 255, 0.3);
@@ -71,8 +71,7 @@ div {
     }
 }
 
-// Change header bar SVG colours
-// editor's note: each!
+// Change each header bar SVG colours
 $_svg_names: Pin People Mention PersonPlus NotificationBell;
 
 @each $_svg_name in $_svg_names {

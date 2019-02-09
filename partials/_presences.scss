@@ -1,5 +1,5 @@
 // Presence changes
-@if $disable-presences == true {
+@if $disable-presences {
     div[class*='flex'] div[class^='activity'] { 
         display: none; 
     }
@@ -9,7 +9,6 @@
     svg[name='RichActivity'] { 
         display: none; 
     }
-    
 } @else {
     // DM rich presence icon
     div[class^='privateChannels'] div[class^='channel'] {

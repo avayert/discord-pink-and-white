@@ -5,7 +5,7 @@
 }
 
 // Original: Disable ALL
-@if $disable-statuses == true {
+@if $disable-statuses {
     // Hides ALL
     div[class*='status'] {
         display: none;
@@ -16,7 +16,7 @@
         @extend %_status_mask;
     }
 // Laura tweak: Disable ALL but top bar
-} @else if $disable-statuses-most == true {
+} @else if $disable-statuses-most {
     div[class*='scroller'] div[class*='status'] {
         display: none;
     }

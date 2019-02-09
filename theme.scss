@@ -15,7 +15,7 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
 
 .theme-light {
     // font changes
-    @import "partials/abc_font.scss";
+    @import "partials/font.scss";
 
     /// Header bar changes
     @import "partials/header.scss";
@@ -91,11 +91,6 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
 
     button[class*='colorGreen']:hover {
         background-color: #1CA585;
-    }
-
-    // ??
-    path {
-        opacity: 1;
     }
 
     // The user info stuff at the bottom

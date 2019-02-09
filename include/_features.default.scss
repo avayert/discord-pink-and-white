@@ -7,7 +7,7 @@
 $remove-message-divider: true !default;
 
 // Should emoji have their borders removed?
-$remove-emoji-borders: false !default;
+$remove-emoji-borders: true !default;
 
 // Should all statuses be disabled?
 $disable-statuses: true !default;
@@ -25,7 +25,10 @@ $disable-friends-button: false !default;
 $disable-profile-badges: true !default;
 
 // Should the custom HLJS theme be disabled?
-$disable-custom-hljs: false !default;
+$custom-hljs: true !default;
+
+// Should unread channels be bold?
+$bold-unread-channels: false !default;
 
 // Override channel fonts?
 $override-channel-fonts: false !default;
