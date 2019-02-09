@@ -1,0 +1,141 @@
+// Changes the bar at the top of Discord to be pink
+header[class^='header'], div[class*='headerBar'] {
+    background: $main-colour !important;
+    -webkit-box-shadow: 1px 1px white;
+    box-shadow: 1px 1px white;
+}
+
+/* Adds the pink thing to the left too */
+div[class^='guildsWrapper'] {
+    border-top: 48px solid $main-colour;
+}
+
+
+// Changes the search thing in DMs to be pink
+// This needs to be separate because lol discord
+div[class^='privateChannels'] div[class^='searchBar'] {
+    background: $main-colour;
+    -webkit-box-shadow: none;
+    box-shadow:none;
+}
+
+// Change the right search bar
+div[class='public-DraftEditorPlaceholder-inner'] {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+// This is that line to the right of the search box
+// This is that line between the channel name and topic text
+div {
+    &[class^='titleWrapper'] div[class^='divider'], &[class^='topic']::before {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+// Make the elements on the channel bar white
+span[class^='channelName'], div[class^='topic'] {
+    color: white
+}
+
+// Changes the AKA thingy in DMs
+span[class^='aka'] {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+// The ring that shows you have unread pins
+svg[name='Pin'] + span[class^='iconBadge'],
+// Icons in the top bar in chat
+div[class^='titleWrapper'] span[class^='icon'] svg {
+    opacity: 0.8 !important;
+    &:hover {
+        opacity: 1 !important;
+    }
+}
+
+// Change header bar to use real @ and # symbols instead of SVGs
+// This looks a lot less unnatural
+div {
+    &[class*='headerBar'] span[class*='channelName'] svg {
+        &[name='At'], &[class^='channelIcon-'] {
+            display: none;
+        }
+    }
+    &[class*='headerBar'] span[class*='channelName'] {
+        &:not([tabindex]):before {
+            content: "#";
+        }
+        &[tabindex]:before {
+            content: "@";
+        }
+    }
+}
+
+// Change header bar SVG colours
+// editor's note: each!
+$_svg_names: Pin People Mention PersonPlus NotificationBell;
+
+@each $_svg_name in $_svg_names {
+    svg[name^=#{$_svg_name}] path { 
+        color: white; 
+    }
+}
+
+// Hide the Call and Video Call icons in the header
+svg {
+    &[name='Phone'], &[name='VideoCamera'] {
+        display: none;
+    }
+}
+
+// Remove question mark icon
+a[href='https://support.discordapp.com'] {
+    display: none;
+}
+
+%raleway-500 {
+    font-family: 'Raleway';
+    font-weight: 500 !important;
+}
+
+// Changes font on usernames and channel names at the top
+span {
+    &[class^='username'], &[class^='channelName'] {
+        @extend %raleway-500;
+    }
+}
+
+// Server name
+header span[class^='name'] {
+    @extend %raleway-500;
+}
+
+// New messages button below header
+div[class^='newMessagesBar'] {
+    & {
+        background-color: rgba($main-colour, 0.7); 
+    }
+
+    // Mark as read text, made white
+    button:last-child {
+        color: rgba(255, 255, 255, 0.6);
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+// Change the left search bar
+div[class^='searchBarInner'] {
+    & {
+        background-color: rgba(255, 255, 255, 0.5) !important;
+        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+    }
+
+    // Left search bar text
+    input::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

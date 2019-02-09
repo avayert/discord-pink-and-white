@@ -1,0 +1,33 @@
+// Note: Modal means the thing that pops up if you click "VIEW PROFILE".
+
+div[class^='modal'] {
+
+    // makes the top section pink
+    div[class*='topSectionPlaying'] div[class*='activityProfile'],
+    div[class*='topSectionSpotify'] div[class*='activityProfile'],
+    div[class*='topSectionNormal'] header,
+    div[class*='topSectionPlaying'] header,
+    div[class*='topSectionSpotify'] header {
+        background-color: $main-colour;
+    }
+
+    // makes the tabs white 
+    div[class*='tabBarContainer'] {
+        background-color: white;
+    }
+
+    // fix username/discrim colours
+    div[class*='topSectionNormal'] span[class^='username'] {
+        color: white !important;
+    }
+    div[class*='topSectionNormal'] span[class^='discriminator'] {
+        color: rgba(255, 255, 255, 0.8) !important;
+    }
+
+    // removes all badges (e.g. nitro, partner)
+    @if $disable-profile-badges == true {
+        div[class^='profileBadgeWrapper'] {
+            display: none;
+        }        
+    }
+}

@@ -1,0 +1,34 @@
+
+%_status_mask {
+    -webkit-mask: none;
+    mask: none;
+}
+
+// Original: Disable ALL
+@if $disable-statuses == true {
+    // Hides ALL
+    div[class*='status'] {
+        display: none;
+    }
+
+    // Gets rid of the circle the status would be in 
+    *[class*='mask'] {
+        @extend %_status_mask;
+    }
+// Laura tweak: Disable ALL but top bar
+} @else if $disable-statuses-most == true {
+    div[class*='scroller'] div[class*='status'] {
+        display: none;
+    }
+
+    *[class*='mask'] {
+        @extend %_status_mask;
+    }
+
+    div[class*='status'] { 
+        border: none !important; 
+    }
+    .colorblind-mode div[class*='offline'] {
+        background-image: none !important; 
+    }
+}

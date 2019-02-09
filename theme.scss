@@ -1,0 +1,122 @@
+/* This file is licenced under the CC BY-SA 4.0 licence. For more information, see 
+https://creativecommons.org/licenses/by-sa/4.0/ */
+
+@import "include/variables.default.scss";
+@import "include/variables.scss";
+@import "include/features.default.scss";
+@import "include/features.scss";
+@import "include/images.scss";
+
+// Main block - all changes are imported from here.
+// General guideline:
+//
+//  - If it fits in a partial file, it goes in there.
+//  - Other misc tweaks go in here (usually, they apply to everything).
+
+.theme-light {
+    // font changes
+    @import "partials/abc_font.scss";
+
+    /// Header bar changes
+    @import "partials/header.scss";
+
+    // Icon changes
+    @import "partials/icons.scss";
+
+    // Status changes
+    @import "partials/statuses.scss";
+
+    // Presence changes
+    @import "partials/presences.scss";
+
+    // Channel scroller 
+    @import "partials/channel_scroller.scss";
+
+    // Guild scroller
+    @import "partials/guild_scroller.scss";
+
+    // Channel (messages area)
+    @import "partials/channel.scss";
+
+    // Chat box
+    @import "partials/chat_box.scss";
+
+    // Profile popout
+    @import "partials/profile_popout.scss";
+
+    // Profile modal
+    @import "partials/profile_modal.scss";
+
+    // Upload modal
+    @import "partials/upload_modal.scss";
+
+    // Mentions
+    @import "partials/mentions.scss";
+
+    // HLJS
+    @import "partials/hljs.scss";
+
+    // Custom tweaks
+    @import "custom.scss";
+
+
+    /// Misc tweaks!
+    // Changes most backgrounds to be white
+    div {
+        &[class^='channels'] {
+          background-color: white;
+          div[class^='container'] {
+            background-color: white;
+          }
+        }
+        &[class^='scrollerWrap'] {
+          background-color: white;
+        }
+      }
+
+    // Remove STUPID FUCKING rounding thing
+    div[class*='base'] {
+        border-radius: 0;
+    }
+    
+    // Change button colour
+    // TODO: Make these configurable
+    button[class*='colorGreen'] {
+        background-color: #20BF9A;
+        color: white;  // not included in theme.css?
+    }
+
+    button[class*='colorGreen']:hover {
+        background-color: #1CA585;
+    }
+
+    // ??
+    path {
+        opacity: 1;
+    }
+
+    // Changes the colour of hyperlinks.
+    a {
+        color: $hyperlink-colour !important;
+    }
+
+    // Changes the colour of hyperlinks in the topic.
+    div[class^='topic'] a {
+        color: white !important;
+        text-decoration: underline;
+    }
+
+
+    /* The user info stuff at the bottom */
+    /* The username and discrim */
+    div[class^='channels'] {
+        /* The username and discrim */
+        div[class^='accountDetails'] span {
+            color: #404040;
+        }
+        /* Discrim opacity */
+        div[class^='container'] span[class^='discriminator'] {
+            opacity: 0.8;
+        }
+    }
+}

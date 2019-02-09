@@ -1,0 +1,60 @@
+// Custom HLJS theme.
+@if $disable-custom-hljs {
+
+} @else {
+    .hljs {
+        color: #727272 !important;
+    }
+    
+    .hljs-comment {
+        color: #8C8C8C !important;
+    }
+    
+    .hljs-selector-pseudo,
+    .hljs-keyword {
+        color: #FF6B81 !important;
+    }
+    
+    .hljs-section,
+    .hljs-title,
+    .hljs-selector-tag,
+    .hljs-selector-attr,
+    .hljs-built_in,
+    .hljs-subst,
+    .hljs-class .hljs-title,
+    .hljs-deletion,
+    .hljs-symbol,
+    .hljs-variable,
+    .hljs-literal {
+        color: #B2394B !important;
+    }
+    
+    .hljs-regexp,
+    .hljs-doctag,
+    .hljs-string,
+    .hljs-number,
+    .hljs-addition {
+        color: #20BF9A !important;
+    }
+    
+    .hljs-attribute,
+    .hljs-attr,
+    .hljs-meta {
+        color: #41A1CC !important;
+    }
+    
+    /*
+    These are black so it is obvious when they are missing
+    */
+    .hljs-quote,
+    .hljs-type,
+    .hljs-name,
+    .hljs-template-variable,
+    .hljs-selector-id,
+    .hljs-bullet,
+    .hljs-link,
+    .hljs-formula {
+        color: black !important;
+    }
+    
+}
