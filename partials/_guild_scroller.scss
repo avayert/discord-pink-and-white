@@ -2,7 +2,7 @@ div[class^='guildsWrapper'] {
     // MOST IMPORTANT CHANGE
     // Changes the Discord icon to a House at the top of the DM list.
     svg[name^='Discord'] defs path {
-        /* Google icons home icon */
+        // Google icons home icon
         d: path("M 10 20 v -6 h 4 v 6 h 5 v -8 h 3 L 12 3 L 2 12 h 3 v 8 Z") !important;
         color: #404040;
     }

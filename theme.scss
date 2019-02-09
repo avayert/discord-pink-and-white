@@ -98,14 +98,13 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
         opacity: 1;
     }
 
-    /* The user info stuff at the bottom */
-    /* The username and discrim */
+    // The user info stuff at the bottom
     div[class^='channels'] {
-        /* The username and discrim */
+        // The username and discrim */
         div[class^='accountDetails'] span {
             color: #404040;
         }
-        /* Discrim opacity */
+        // Discrim opacity
         div[class^='container'] span[class^='discriminator'] {
             opacity: 0.8;
         }

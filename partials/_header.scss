@@ -5,7 +5,7 @@ header[class^='header'], div[class*='headerBar'] {
     box-shadow: 1px 1px white;
 }
 
-/* Adds the pink thing to the left too */
+// Adds the pink thing to the left too
 div[class^='guildsWrapper'] {
     border-top: 48px solid $main-colour;
 }

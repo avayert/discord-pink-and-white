@@ -44,8 +44,3 @@ div[class^='userPopout'] {
     }
 
 }
-
-/* Makes the activity part of the user popup not be any darker */
-div[class^='activityUserPopout'] {
-    background-color: rgba(0, 0, 0, 0);
-}
