@@ -6,7 +6,7 @@ div[class^='userPopout'] {
         &[class^='headerPlaying'],
         &[class^='headerNormal'],
         &[class^='headerSpotify'] {
-            background-color: #FF6B81; 
+            background-color: $main-colour; 
         }
     }
 
