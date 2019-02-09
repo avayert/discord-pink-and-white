@@ -16,8 +16,13 @@ div[class^='userPopout'] {
     }
 
     // make usernames white on the modal popup
-    div[class^='headerTag'] span.username { 
-        color: white !important; 
+    div[class^='headerTag'] {
+        span.username { 
+            color: white !important; 
+        }
+        span.discriminator {
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
     }
 
     // remove useless protip section
