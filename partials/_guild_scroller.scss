@@ -1,0 +1,50 @@
+div[class^='guildsWrapper'] {
+    // MOST IMPORTANT CHANGE
+    // Changes the Discord icon to a House at the top of the DM list.
+    svg[name^='Discord'] defs path {
+        // Google icons home icon
+        d: path("M 10 20 v -6 h 4 v 6 h 5 v -8 h 3 L 12 3 L 2 12 h 3 v 8 Z") !important;
+        color: #404040;
+    }
+
+    // Gives the house icon a white background.
+    div[class^='guild']:first-child div[class^='guildInner'] {
+        background-color: white !important;
+    }
+
+    // Unread icon
+    div[class^='guild'][class*='unread']::before {
+        background-color: $main-colour;
+    }
+
+    // Changes the background of guild text icons.
+    div[class^='guildInner'] {
+        background-color: $main-colour !important;
+    }
+
+    // Changes the separator between the guilds and the house
+    div[class^='guildSeparator']::after {
+        background-color: #404040;
+    }
+
+    // Makes the friends online text readable
+    div[class^='friendsOnline'] {
+        color: #404040;
+        font-weight: 400 !important;
+    }
+    
+    // Changes the guilds add button to be white
+    button[class*='guildsAdd'] {
+        background-color: white;
+        border: 2px solid #EBEBEB;
+        color: #8C8C8C;
+    }
+
+    // Changes the unread count badge to be circular and pink
+    div[class*='badge'] {
+        border-radius: 10px !important;
+        background-color: $main-colour;
+        color: white;
+        font-weight: 600 !important;
+    }
+}

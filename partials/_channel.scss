@@ -1,0 +1,81 @@
+// CSS for inside the channel
+
+// Load more messages button
+div[class^='hasMore'] button {
+    background-color: white;
+    color: $main-colour;
+    border: 1px solid #F6F6F6;
+}
+
+// Code block fonts
+.hljs, span[class^='hljs'] {
+    font-family: 'Fira Code' !important;
+    font-weight: 500 !important;
+}
+
+// Code blocks
+div[class^='markup'] pre {
+    border: none;
+}
+
+// Inline code blocks
+div[class^='markup'] code {
+    &, &.inline {
+      background-color: #F6F6F6 !important;
+    }
+}
+
+// Allow overriding fonts
+@if $override-channel-fonts == true {
+    // Body font override
+    div[class^="messageCozy"] div[class^="markup"] {
+        &, span, em, strong, s, a {
+            font-family: $override-channel-fonts-text;
+        }
+    }
+
+    // Header font override
+    span[class^="username-"] {
+        font-family: $override-channel-fonts-username;
+    }
+
+    // Code block override
+    .hljs, span[class^='hljs'] {
+        font-family: $override-channel-fonts-codeblock !important;
+    }
+
+    // Inline code override
+    div[class^='markup'] code {
+        &, &.inline {
+            font-family: $override-channel-fonts-inlinecode !important;
+        }
+    }
+
+}
+
+// Makes message text darker.
+div[class^='markup'] {
+    color: #404040;
+}
+
+// Removes the message divider.
+@if $remove-message-divider == true {
+    hr[class^='dividerEnabled'] {
+        display: none;
+    }
+}
+
+@if $remove-emoji-borders == true {
+    .emoji {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }    
+}
+
+// Removes excess buttons on the chat bar.
+div[class^='buttons'] {
+    button[tabindex='2'], div[class^='buttonContainer'] {
+        display: none;
+    }
+}
+

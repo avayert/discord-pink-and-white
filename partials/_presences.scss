@@ -1,0 +1,33 @@
+// Presence changes
+@if $disable-presences == true {
+    div[class*='flex'] div[class^='activity'] { 
+        display: none; 
+    }
+    div[class^='activityUserPopout'] { 
+        display: none; 
+    }
+    svg[name='RichActivity'] { 
+        display: none; 
+    }
+    
+} @else {
+    // DM rich presence icon
+    div[class^='privateChannels'] div[class^='channel'] {
+        path[class^='activityIconForeground'], &:hover path[class^='activityIconForeground'] {
+            fill: #404040;
+            color: #404040;
+        }
+    }
+
+    // Makes the activity part of the user popup not be any darker
+    div[class^='activityUserPopout'] {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    // Hyperlinks in activities should be white or they blend in with the background
+    div[class*='activityProfile'] a,
+    div[class^='activityUserPopout'] a {
+        color: white !important;
+        font-weight: 400 !important;
+    }
+}

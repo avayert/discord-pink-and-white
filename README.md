@@ -1,5 +1,17 @@
 # Discord Pink & White
 
-My pink and white Discord theme.
+[![](https://img.shields.io/badge/Licence-CC_BY--SA_4.0-FF6B81.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+My pink and white Discord theme.  
+This is a theme for **light theme** only; the changes will not exist on dark theme.
+
+## Installation
+
+1) `npm install -g sass`  
+2) `sass theme.scss theme.css`  
+3) Point BeautifulDiscord at your theme.css
+
+## Development
+
+You can use `sass --watch theme.scss theme.css` to automatically regenerate your output CSS when 
+making changes.

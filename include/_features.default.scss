@@ -1,0 +1,35 @@
+// This file is used to enable/disable features.
+// This is the DEFAULT feature set. To enable or disable features, set them to true/false/whatever 
+// in include/_features.scss.
+
+
+// Should the message divider be removed?
+$remove-message-divider: true !default;
+
+// Should emoji have their borders removed?
+$remove-emoji-borders: false !default;
+
+// Should all statuses be disabled?
+$disable-statuses: true !default;
+
+// Should *most* statuses be disabled? (This keeps the icon in the header bar, instead).
+$disable-statuses-most: false !default;
+
+// Should all presences be disabled?
+$disable-presences: false !default;
+
+// Should the friends button be disabled entirely?
+$disable-friends-button: false !default;
+
+// Should badges on profiles be disabled?
+$disable-profile-badges: true !default;
+
+// Should the custom HLJS theme be disabled?
+$disable-custom-hljs: false !default;
+
+// Override channel fonts?
+$override-channel-fonts: false !default;
+// Message text override.
+$override-channel-fonts-text: Raleway !default;
+// Username/timestamp text override.
+$override-channel-fonts-username: Raleway !default;

@@ -1,0 +1,61 @@
+// Upload modal changes
+// TODO: Hover colours
+
+div[class^='uploadModal'] {
+    // make modal bg pink
+    & {
+        background-color: $main-colour;
+    }
+
+    div[class^='footer'] {
+        // make footer white
+        & { 
+            background-color: white;
+        }
+
+        // cancel button text
+        button:nth-child(1) span {
+            color: black;
+        }
+
+        // upload button text
+        button[type^='submit'] {
+            & {
+                background-color: $main-colour;
+            }
+
+            span {
+                color: white;
+            }
+        }
+
+        // make "Add a comment" text white always
+        div[class^='comment'] span {
+            color: white;
+        }
+
+        // remove blue borders from modal
+        div[class^='inner'] {
+            border: none;
+        }
+
+        div[class^='icon'] {
+            // Needs important for some reason
+            border: none !important;
+        }
+
+        // fix spoiler checkbox
+        label[class^='checkboxWrapper'] {
+            div[class^='white'] {
+                color: black; // hmm
+            }
+            // make the checkbox pink
+            // TODO: make the actual check pink...
+            div[class^='checkbox'] {
+                & {
+                    border-color: $main-colour !important;
+                }
+            }
+        }
+    }
+}

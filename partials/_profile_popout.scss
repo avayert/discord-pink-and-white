@@ -1,0 +1,46 @@
+// Note: Popout means the thing when you click an avatar.
+
+// Normalise header colours
+div[class^='userPopout'] {
+    div {
+        &[class^='headerPlaying'],
+        &[class^='headerNormal'],
+        &[class^='headerSpotify'] {
+            background-color: $main-colour; 
+        }
+    }
+
+    // forgot why this was needed (or if it is?)
+    div[class^='headerNameWrapper'] span[class^='headerName'] { 
+        color: white !important; 
+    }
+
+    // make usernames white on the modal popup
+    div[class^='headerTag'] {
+        span.username { 
+            color: white !important; 
+        }
+        span.discriminator {
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
+    }
+
+    // remove useless protip section
+    div[class^='footer'] {
+        & {
+            padding: 0;
+        }
+
+        input[class^='quickMessage'] {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px
+        }
+        
+        div[class^='protip'] { 
+            display: none; 
+        }
+    }
+
+}

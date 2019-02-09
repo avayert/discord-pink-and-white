@@ -1,0 +1,46 @@
+
+// Fix buttons at the bottom
+div[class^='accountDetails'] + div[class^='flex'] {
+    // change some icons to material icons
+    $_image_names: (
+        Unmute: $image-unmute,
+        Mute: $image-mute,
+        Deafen: $image-deafen,
+        Undeafen: $image-undeafen
+    );
+
+    @each $name, $url in $_image_names {
+        button[aria-label='#{$name}'] {
+            background-image: $url !important;
+            opacity: 1;
+        }
+    }
+    
+    // settings icon/button
+    svg[name='Gear'] {
+        color: black;
+    }
+    button[aria-label='User Settings'] {
+        opacity: 0.90;
+    }
+
+
+    // change all hovers 
+    &:hover {
+        background-color: #EBEBEB;
+    }
+}
+
+// Change search bar icons
+div[class^='search'] {
+    // Magnifying glass
+    i[class*='EyeGlass'][class*='visible'] {
+        background-image: $image-eyeglass;
+        opacity: 0.8 !important;
+    }
+
+    i[class*='BarClear'][class*='visible'] {
+        background-image: $image-barclear;
+        opacity: 0.8 !important;
+    }
+}

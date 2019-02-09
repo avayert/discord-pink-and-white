@@ -1,0 +1,10 @@
+// Changes the colour of hyperlinks.
+a {
+    color: $hyperlink-colour !important;
+}
+
+// Changes the colour of hyperlinks in the topic.
+div[class^='topic'] a {
+    color: white !important;
+    text-decoration: underline;
+}
