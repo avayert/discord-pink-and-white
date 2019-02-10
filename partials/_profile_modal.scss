@@ -21,13 +21,19 @@ div[class^='modal'] {
         color: white !important;
     }
     div[class*='topSectionNormal'] span[class^='discriminator'] {
-        color: rgba(255, 255, 255, 0.8) !important;
+        color: rgba(white, 0.8) !important;
     }
 
     // removes all badges (e.g. nitro, partner)
-    @if $disable-profile-badges == true {
+    @if $disable-profile-badges {
         div[class^='profileBadgeWrapper'] {
             display: none;
         }        
+    }
+    
+    svg {
+        &[name='MobileDevice'] path {
+            color: white !important;
+        }
     }
 }

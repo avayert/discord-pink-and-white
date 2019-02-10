@@ -1,6 +1,8 @@
 // Channel scroller (sidebar)
 
 div {
+    // NOTE: I feel like this can be refactored to be a less of a jumble
+
     // Selected DM/Guild Channel name
     &[class^='privateChannels'] div[class^='channel'][class*=selected] span, 
     &[class^='nameSelectedText'] {
@@ -64,6 +66,32 @@ div {
             font-weight: 400 !important;
         }
     }
+
+    // Scrollbar on the right in the chat view
+    &[class*='scroller'][class*='messages']::-webkit-scrollbar-thumb {
+        background-color: $main_colour !important;
+    }
+}
+
+// Hash signs before channel names
+svg {
+    // Regular and unread
+    &[class^='colorDefaultText'], &[class^='colorUnreadText'] {
+        color: #8C8C8C;
+        opacity: 1 !important;
+    }
+
+    // Selected
+    &[class^='colorSelectedText'] {
+        color: #333333;
+        opacity: 1 !important;
+    }
+
+    // Muted
+    &[class^='colorMutedText'] {
+        color: #D9D9D9;
+        opacity: 1 !important;
+    }
 }
 
 
@@ -79,11 +107,12 @@ div[class^='privateChannels'] {
 
     // Friends button in DM menu
     div[class^='scroller'] {
+        // Remove padding above friends button
         & {
             padding-top: 0px !important;
         }
     
-        @if $disable-friends-button == true {
+        @if $disable-friends-button {
             a[href='/channels/@me'] {
                 display: none;
             }

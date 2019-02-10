@@ -58,12 +58,7 @@ div[class^='uploadModal'] {
     }
 
     // remove blue borders from modal
-    div[class^='inner'] {
-        border: none !important;
-    }
-
-    div[class^='icon'] {
-        // Needs important for some reason
+    div[class^='inner'], div[class^='icon'] {
         border: none !important;
     }
 }

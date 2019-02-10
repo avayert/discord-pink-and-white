@@ -21,7 +21,16 @@ div[class^='guildsWrapper'] {
 
     // Unread icon
     div[class^='guild'][class*='unread']::before {
-        background-color: $main-colour;
+            background-color: $main-colour;
+    }
+
+    // New [mentions] (arrow up or down) button in guild scroller
+    div[class^='unreadMentionsIndicator'] {
+        div[class*='bar'] {
+            background-color: $main-colour;
+            color: white;
+            box-shadow: none;
+        }
     }
 
     // Changes the background of guild text icons.
@@ -45,9 +54,14 @@ div[class^='guildsWrapper'] {
         background-color: white;
         border: 2px solid #EBEBEB;
         color: #8C8C8C;
+
+        &:hover {
+            color: #333333;
+            border-color: #D9D9D9;
+        }
     }
 
-    // Changes the unread count badge to be circular and pink
+    // Changes the unread mentions count badge to be circular and pink
     div[class*='badge'] {
         border-radius: 10px !important;
         background-color: $main-colour;

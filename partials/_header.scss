@@ -21,14 +21,14 @@ div[class^='privateChannels'] div[class^='searchBar'] {
 
 // Change the right search bar
 div[class='public-DraftEditorPlaceholder-inner'] {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(white, 0.6);
 }
 
 // This is that line to the right of the search box
 // and that line between the channel name and topic text
 div {
     &[class^='titleWrapper'] div[class^='divider'], &[class^='topic']::before {
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(white, 0.3);
     }
 }
 
@@ -39,7 +39,7 @@ span[class^='channelName'], div[class^='topic'] {
 
 // Changes the AKA thingy in DMs
 span[class^='aka'] {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(white, 0.5);
     color: white;
 }
 
@@ -117,7 +117,7 @@ div[class^='newMessagesBar'] {
 
     // Mark as read text, made white
     button:last-child {
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(white, 0.6);
 
         &:hover {
             color: white;
@@ -128,13 +128,13 @@ div[class^='newMessagesBar'] {
 // Change the left search bar
 div[class^='searchBarInner'] {
     & {
-        background-color: rgba(255, 255, 255, 0.5) !important;
+        background-color: rgba(white, 0.5) !important;
         box-shadow: none !important;
         -webkit-box-shadow: none !important;
     }
 
     // Left search bar text
     input::placeholder {
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(white, 0.6);
     }
 }

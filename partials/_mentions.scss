@@ -2,10 +2,9 @@
 
 // Mention colour in a channel
 div[class^='markup'] span[class*='wrapper'] {
-    & {
-        background-color: rgba($mention-colour, 0.15);
-        color: $mention-colour;
-    }
+    background-color: rgba($mention-colour, 0.15);
+    color: $mention-colour;
+
     &:hover {
         background-color: $mention-colour;
         color: white;
@@ -14,21 +13,19 @@ div[class^='markup'] span[class*='wrapper'] {
 
 // Mention colour in a topic
 div[class^='topic'] span[class*='wrapper'] {
-    & {
-        background-color: rgba(255, 255, 255, 0.4);
-        color: white;
-    }
+    background-color: rgba(white, 0.4);
+    color: white;
+
     &:hover {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(white, 0.8);
         color: $mention-colour;
     }
 }
 
 // You mentioned in a message
 div[class^='isMentioned'] {
-    & {
-        background-color: rgba($mention-colour, 0.15);
-    }
+    background-color: rgba($mention-colour, 0.15);
+
     // Bar on the left - slightly darker
     &:after {
         background-color: rgba($mention-colour, 0.15);

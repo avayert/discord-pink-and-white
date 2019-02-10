@@ -25,8 +25,22 @@ div[class^='markup'] code {
     }
 }
 
+span[class^='spoilerText'] {
+    background-color: black !important;
+    border: 2px solid black;
+
+    span[class^='inlineContent'] {
+        color: white;
+        font-weight: 400 !important;
+
+        code {
+            color: #404040;
+        }
+    }
+}
+
 // Allow overriding fonts
-@if $override-channel-fonts == true {
+@if $override-channel-fonts {
     // Body font override
     div[class^="messageCozy"] div[class^="markup"] {
         &, span, em, strong, s, a {
@@ -59,13 +73,13 @@ div[class^='markup'] {
 }
 
 // Removes the message divider.
-@if $remove-message-divider == true {
+@if $remove-message-divider {
     hr[class^='dividerEnabled'] {
         display: none;
     }
 }
 
-@if $remove-emoji-borders == true {
+@if $remove-emoji-borders {
     .emoji {
         margin-left: 0 !important;
         margin-right: 0 !important;

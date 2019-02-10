@@ -63,6 +63,9 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
     // Hyperlinks
     @import "partials/hyperlinks.scss";
 
+    // Search
+    @import "partials/search.scss";
+
     // Custom tweaks
     @import "custom.scss";
 
@@ -81,7 +84,7 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
         }
       }
 
-    // Remove STUPID FUCKING rounding thing
+    // Remove STUPID HECKING rounding thing
     div[class*='base'] {
         border-radius: 0;
     }

@@ -21,7 +21,7 @@ div[class^='userPopout'] {
             color: white !important; 
         }
         span.discriminator {
-            color: rgba(255, 255, 255, 0.7) !important;
+            color: rgba(white, 0.7) !important;
         }
     }
 
@@ -40,6 +40,12 @@ div[class^='userPopout'] {
         
         div[class^='protip'] { 
             display: none; 
+        }
+    }
+
+    svg {
+        &[name='MobileDevice'] path {
+            color: white !important;
         }
     }
 }

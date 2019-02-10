@@ -13,6 +13,10 @@ div[class^='channelTextArea'] {
         // Changes the text area text colour.
         textarea {
             color: #8C8C8C;
+
+            &::placeholder {
+                color: #D9D9D9;
+            }
         }
 
         // Changes the attach button
