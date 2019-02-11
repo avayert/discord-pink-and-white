@@ -3,53 +3,53 @@
     .hljs {
         color: #727272 !important;
     }
-    
+
     .hljs-comment {
         color: #8C8C8C !important;
     }
-    
-    .hljs-selector-pseudo,
-    .hljs-keyword {
+
+    .hljs-keyword,
+    .hljs-selector-pseudo {
         color: #FF6B81 !important;
     }
-    
-    .hljs-section,
-    .hljs-title,
-    .hljs-selector-tag,
-    .hljs-selector-attr,
+
     .hljs-built_in,
-    .hljs-subst,
     .hljs-class .hljs-title,
     .hljs-deletion,
+    .hljs-literal,
+    .hljs-name,
+    .hljs-section,
+    .hljs-selector-attr,
+    .hljs-selector-tag,
+    .hljs-subst,
     .hljs-symbol,
-    .hljs-variable,
-    .hljs-literal {
+    .hljs-title,
+    .hljs-variable {
         color: #B2394B !important;
     }
-    
-    .hljs-regexp,
+
+    .hljs-addition,
     .hljs-doctag,
-    .hljs-string,
     .hljs-number,
-    .hljs-addition {
+    .hljs-regexp,
+    .hljs-string {
         color: #20BF9A !important;
     }
-    
-    .hljs-attribute,
+
     .hljs-attr,
+    .hljs-attribute,
     .hljs-meta {
         color: #41A1CC !important;
     }
-    
+
     // These are black so it is obvious when they are missing
-    .hljs-quote,
-    .hljs-type,
-    .hljs-name,
-    .hljs-template-variable,
-    .hljs-selector-id,
     .hljs-bullet,
+    .hljs-formula,
     .hljs-link,
-    .hljs-formula {
+    .hljs-quote,
+    .hljs-selector-id,
+    .hljs-template-variable,
+    .hljs-type {
         color: black !important;
     }
 }

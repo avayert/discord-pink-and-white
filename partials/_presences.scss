@@ -1,13 +1,13 @@
 // Presence changes
 @if $disable-presences {
-    div[class*='flex'] div[class^='activity'] { 
-        display: none; 
+    div[class*='flex'] div[class^='activity'] {
+        display: none;
     }
-    div[class^='activityUserPopout'] { 
-        display: none; 
+    div[class^='activityUserPopout'] {
+        display: none;
     }
-    svg[name='RichActivity'] { 
-        display: none; 
+    svg[name='RichActivity'] {
+        display: none;
     }
 } @else {
     // DM rich presence icon

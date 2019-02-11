@@ -4,13 +4,13 @@ div {
     // NOTE: I feel like this can be refactored to be a less of a jumble
 
     // Selected DM/Guild Channel name
-    &[class^='privateChannels'] div[class^='channel'][class*=selected] span, 
+    &[class^='privateChannels'] div[class^='channel'][class*=selected] span,
     &[class^='nameSelectedText'] {
         color: #404040 !important;
     }
 
     // Hovered DM/Guild channel name
-    &[class^='privateChannels'] div[class^='channel']:hover a, 
+    &[class^='privateChannels'] div[class^='channel']:hover a,
     &[class^='contentHoveredText'] {
         background-color: #F6F6F6;
     }
@@ -111,7 +111,7 @@ div[class^='privateChannels'] {
         & {
             padding-top: 0px !important;
         }
-    
+
         @if $disable-friends-button {
             a[href='/channels/@me'] {
                 display: none;
@@ -128,7 +128,7 @@ div[class^='privateChannels'] {
                         color: #8C8C8C !important;
                     }
                 }
-                &[class*='selected']:nth-child(1) div[class*='name'], 
+                &[class*='selected']:nth-child(1) div[class*='name'],
                 &:nth-child(1):hover div[class*='name'] {
                     color: #333333 !important;
                 }

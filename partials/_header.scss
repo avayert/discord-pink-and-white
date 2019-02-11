@@ -75,8 +75,8 @@ div {
 $_svg_names: Pin People Mention PersonPlus NotificationBell;
 
 @each $_svg_name in $_svg_names {
-    svg[name^=#{$_svg_name}] path { 
-        color: white; 
+    svg[name^=#{$_svg_name}] path {
+        color: white;
     }
 }
 
@@ -112,7 +112,7 @@ header span[class^='name'] {
 // New messages button below header
 div[class^='newMessagesBar'] {
     & {
-        background-color: rgba($main-colour, 0.7); 
+        background-color: rgba($main-colour, 0.7);
     }
 
     // Mark as read text, made white

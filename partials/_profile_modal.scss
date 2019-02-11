@@ -11,7 +11,7 @@ div[class^='modal'] {
         background-color: $main-colour;
     }
 
-    // makes the tabs white 
+    // makes the tabs white
     div[class*='tabBarContainer'] {
         background-color: white;
     }
@@ -28,9 +28,9 @@ div[class^='modal'] {
     @if $disable-profile-badges {
         div[class^='profileBadgeWrapper'] {
             display: none;
-        }        
+        }
     }
-    
+
     svg {
         &[name='MobileDevice'] path {
             color: white !important;

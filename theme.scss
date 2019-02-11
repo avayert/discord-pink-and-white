@@ -1,4 +1,4 @@
-/* This file is licenced under the CC BY-SA 4.0 licence. For more information, see 
+/* This file is licenced under the CC BY-SA 4.0 licence. For more information, see
 https://creativecommons.org/licenses/by-sa/4.0/ */
 
 @import "include/variables.default.scss";
@@ -33,7 +33,7 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
     // Presence changes
     @import "partials/presences.scss";
 
-    // Channel scroller 
+    // Channel scroller
     @import "partials/channel_scroller.scss";
 
     // Guild scroller
@@ -88,7 +88,7 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
     div[class*='base'] {
         border-radius: 0;
     }
-    
+
     // Change button colour
     // TODO: Make these configurable
     button[class*='colorGreen'] {

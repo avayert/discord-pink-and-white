@@ -11,7 +11,7 @@
         display: none;
     }
 
-    // Gets rid of the circle the status would be in 
+    // Gets rid of the circle the status would be in
     *[class*='mask'] {
         @extend %_status_mask;
     }
@@ -25,10 +25,10 @@
         @extend %_status_mask;
     }
 
-    div[class*='status'] { 
-        border: none !important; 
+    div[class*='status'] {
+        border: none !important;
     }
     .colorblind-mode div[class*='offline'] {
-        background-image: none !important; 
+        background-image: none !important;
     }
 }

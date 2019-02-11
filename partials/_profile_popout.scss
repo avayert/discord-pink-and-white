@@ -6,19 +6,19 @@ div[class^='userPopout'] {
         &[class^='headerPlaying'],
         &[class^='headerNormal'],
         &[class^='headerSpotify'] {
-            background-color: $main-colour; 
+            background-color: $main-colour;
         }
     }
 
     // forgot why this was needed (or if it is?)
-    div[class^='headerNameWrapper'] span[class^='headerName'] { 
-        color: white !important; 
+    div[class^='headerNameWrapper'] span[class^='headerName'] {
+        color: white !important;
     }
 
     // make usernames white on the modal popup
     div[class^='headerTag'] {
-        span.username { 
-            color: white !important; 
+        span.username {
+            color: white !important;
         }
         span.discriminator {
             color: rgba(white, 0.7) !important;
@@ -37,9 +37,9 @@ div[class^='userPopout'] {
             margin-right: 10px;
             margin-bottom: 10px
         }
-        
-        div[class^='protip'] { 
-            display: none; 
+
+        div[class^='protip'] {
+            display: none;
         }
     }
 

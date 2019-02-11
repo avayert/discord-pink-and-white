@@ -14,7 +14,7 @@ div[class^='accountDetails'] + div[class^='flex'] {
             opacity: 1;
         }
     }
-    
+
     // Settings icon/button
     svg[name='Gear'] {
         color: black;
@@ -24,7 +24,7 @@ div[class^='accountDetails'] + div[class^='flex'] {
     }
 
 
-    // Change all hovers 
+    // Change all hovers
     &:hover {
         background-color: #EBEBEB;
     }
