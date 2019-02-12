@@ -25,7 +25,7 @@ div[class^='accountDetails'] + div[class^='flex'] {
 
 
     // Change all hovers
-    &:hover {
+    & *:hover {
         background-color: #EBEBEB;
     }
 }
