@@ -1,0 +1,56 @@
+// Inspired by Lily's block CSS
+
+div[class^='messageGroupBlocked-'] {
+    // Remove border around blocked messages
+    border: none;
+
+    height: 0px;
+
+    // Display ::before and ::after properly
+    display: flex;
+    justify-content: center;
+
+    // Have reasonable space between blocked message and other messages
+    margin-bottom: 20px !important;
+    margin-top: -20px !important;
+
+    // Lines to the left and right of the button
+    &::before, &::after {
+        background-color: #F6F6F6;
+
+        // Make sure they are visible
+        content: "";
+        height: 1px;
+        flex: 1;
+
+        // Move to the correct position horizontally
+        margin-top: 12px;
+
+        // Add a bit of space to the left and right of the lines
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    &[class*='revealed'] {
+        // When opened don't screw up the message content
+        height: initial;
+
+        // Make sure the elements are in the right order
+        flex-direction: column;
+
+        border: none;
+
+        // Change the margin when opened to look better
+        margin-bottom: 0px !important;
+        margin-top: -10px !important;
+
+        &::before, &::after {
+            // Hide the lines after opening
+            display: none;
+        }
+    }
+
+    div[class^='messageGroupBlockedBtn'] {
+        padding: none !important;
+    }
+}
