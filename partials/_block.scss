@@ -11,8 +11,8 @@ div[class^='messageGroupBlocked-'] {
     justify-content: center;
 
     // Have reasonable space between blocked message and other messages
-    margin-bottom: 20px !important;
-    margin-top: -20px !important;
+    margin-bottom: 20px;
+    margin-top: 5px;
 
     // Lines to the left and right of the button
     &::before, &::after {
