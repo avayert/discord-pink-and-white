@@ -1,0 +1,18 @@
+div [class^='friendsTable'] {
+    div[class^='friendsTableHeader'] {
+        border-bottom: none !important;
+
+        div[class^='friendsColumnSeparator'] {
+            background-color: white;
+        }
+    }
+
+    div[class*='friendsRow'] {
+        border-top: white !important;
+
+        &:hover {
+            box-shadow: none !important;
+            background-color: #F6F6F6;
+        }
+    }
+}
