@@ -16,3 +16,13 @@ div [class^='friendsTable'] {
         }
     }
 }
+
+div[class*='tabBar'] {
+    div[class*='primary'] {
+        background-color: #20BF9A !important;
+
+        &:hover {
+            background-color: #1CA585 !important;
+        }
+    }
+}
