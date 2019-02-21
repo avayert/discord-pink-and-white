@@ -25,4 +25,8 @@ div[class*='tabBar'] {
             background-color: #1CA585 !important;
         }
     }
+
+    div[class*='itemDefault'] {
+        color: white;
+    }
 }
