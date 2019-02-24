@@ -10,10 +10,10 @@ $remove-message-divider: true !default;
 $remove-emoji-borders: true !default;
 
 // Should all statuses be disabled?
-$disable-statuses: true !default;
+$disable-statuses: false !default;
 
 // Should *most* statuses be disabled? (This keeps the icon in the header bar, instead).
-$disable-statuses-most: false !default;
+$disable-statuses-most: true !default;
 
 // Should all presences be disabled?
 $disable-presences: false !default;
