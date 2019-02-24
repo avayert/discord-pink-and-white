@@ -1,7 +1,7 @@
 // Mention overrides
 
 // Mention colour in a channel
-div[class^='markup'] span[class*='wrapper'] {
+span[class*='mention'] {
     background-color: rgba($mention-colour, 0.15);
     color: $mention-colour;
 
