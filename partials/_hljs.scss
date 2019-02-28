@@ -8,12 +8,14 @@
         color: #8C8C8C !important;
     }
 
+
     .hljs-keyword,
     .hljs-selector-pseudo {
         color: #FF6B81 !important;
     }
 
     .hljs-built_in,
+    .hljs-bullet,
     .hljs-class .hljs-title,
     .hljs-deletion,
     .hljs-literal,
@@ -43,7 +45,6 @@
     }
 
     // These are black so it is obvious when they are missing
-    .hljs-bullet,
     .hljs-formula,
     .hljs-link,
     .hljs-quote,
