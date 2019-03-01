@@ -27,6 +27,10 @@
 
     div[class*='status'] {
         border: none !important;
+
+        &[class*=online] {
+            background-color: $green;
+        }
     }
     .colorblind-mode div[class*='offline'] {
         background-image: none !important;

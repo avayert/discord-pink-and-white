@@ -80,15 +80,15 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
     // Changes most backgrounds to be white
     div {
         &[class^='channels'] {
-          background-color: white;
-          div[class^='container'] {
             background-color: white;
-          }
+            div[class^='container'] {
+                background-color: white;
+            }
         }
         &[class^='scrollerWrap'] {
-          background-color: white;
+            background-color: white;
         }
-      }
+    }
 
     // Remove STUPID HECKING rounding thing
     div[class*='base'] {
@@ -98,12 +98,12 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
     // Change button colour
     // TODO: Make these configurable
     button[class*='colorGreen'] {
-        background-color: #20BF9A;
+        background-color: $green;
         color: white;  // not included in theme.css?
     }
 
     button[class*='colorGreen']:hover {
-        background-color: #1CA585;
+        background-color: $green-darker;
     }
 
     // The user info stuff at the bottom
