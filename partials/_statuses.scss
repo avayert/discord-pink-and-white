@@ -15,7 +15,7 @@
     *[class*='mask'] {
         @extend %_status_mask;
     }
-// Laura tweak: Disable ALL but top bar
+    // Laura tweak: Disable ALL but top bar
 } @else if $disable-statuses-most {
     div[class*='scroller'] div[class*='status'] {
         display: none;
