@@ -68,8 +68,14 @@ div {
     }
 
     // Scrollbar on the right in the chat view
-    &[class*='scroller'][class*='messages']::-webkit-scrollbar-thumb {
-        background-color: $main_colour !important;
+    &[class*='scroller'] {
+        &[class*='messages']::-webkit-scrollbar-thumb {
+            background-color: $main_colour !important;
+        }
+
+        &[class*='friendsTableBody']::-webkit-scrollbar-thumb {
+            background-color: $main_colour !important;
+        }
     }
 }
 
