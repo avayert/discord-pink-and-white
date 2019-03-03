@@ -72,7 +72,7 @@ div {
 }
 
 // Change each header bar SVG colours
-$_svg_names: Pin People Mention PersonPlus NotificationBell;
+$_svg_names: Pin People Mention PersonPlus NotificationBell Compose;
 
 @each $_svg_name in $_svg_names {
     svg[name^=#{$_svg_name}] path {
