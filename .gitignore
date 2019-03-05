@@ -1,6 +1,5 @@
 include/_variables.scss
 include/_features.scss
 custom.scss
-output.css
-theme.css
-output.css.map
+*.css
+*.map
