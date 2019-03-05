@@ -54,7 +54,7 @@ div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
     }
 
     // Changes the guilds add button to be white
-    div[class='circleIconButton'] {
+    div[class^='circleIconButton'] {
         background-color: white;
         border: 2px solid #EBEBEB;
         color: #8C8C8C;
