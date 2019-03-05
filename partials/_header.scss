@@ -5,12 +5,6 @@ header[class^='header'], div[class*='headerBar'] {
     box-shadow: 1px 1px white;
 }
 
-// Adds the pink thing to the left too
-div[class^='guildsWrapper'] {
-    border-top: 48px solid $main-colour;
-}
-
-
 // Changes the search thing in DMs to be pink
 // This needs to be separate because lol discord
 div[class^='privateChannels'] div[class^='searchBar'] {
