@@ -1,13 +1,13 @@
 // Mention overrides
 
 // Mention colour in a channel
-span[class*='wrapper'] {
+span[class*='mention'] {
     background-color: rgba($mention-colour, 0.15);
     color: $mention-colour;
 
     &:hover {
         background-color: $mention-colour;
-        color: white;
+        color: white !important;
     }
 }
 
