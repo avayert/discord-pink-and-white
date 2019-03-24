@@ -62,6 +62,7 @@ div {
     // Unread channel name
     &[class^='nameUnreadText'] {
         color: #404040;
+
         @if $bold-unread-channels {
             font-weight: 400 !important;
         }
@@ -76,6 +77,13 @@ div {
         &[class*='friendsTableBody']::-webkit-scrollbar-thumb {
             background-color: $main_colour !important;
         }
+    }
+
+    // NEW UNREADS button
+    &[class*='unread'] div[class^='bar'] {
+        box-shadow: none !important;
+
+        background-color: $main_colour;
     }
 }
 
