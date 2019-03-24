@@ -36,4 +36,15 @@ div[class^='modal'] {
             color: white !important;
         }
     }
+
+    div[class*='headerInfo'] {
+        span:last-of-type {
+            color: $main-colour !important;
+            font-weight: 500 !important;
+
+            // Center text
+            display: inline-flex;
+            align-self: center;
+        }
+    }
 }

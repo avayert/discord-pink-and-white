@@ -92,3 +92,8 @@ div[class^='buttons'] {
         display: none;
     }
 }
+
+span[class*='botTagRegular'] {
+    // TODO figure out how to center this
+    background-color: $main-colour;
+}

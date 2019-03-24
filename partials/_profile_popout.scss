@@ -20,8 +20,19 @@ div[class^='userPopout'] {
         span.username {
             color: white !important;
         }
+
         span.discriminator {
             color: rgba(white, 0.7) !important;
+        }
+
+        span:last-of-type {
+            color: $main-colour !important;
+            font-weight: 500 !important;
+
+            // Center text
+            display: inline-flex;
+            align-self: center;
+            padding: 2px;
         }
     }
 
