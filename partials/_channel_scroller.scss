@@ -1,72 +1,50 @@
 // Channel scroller (sidebar)
 
 div {
-    // NOTE: I feel like this can be refactored to be a less of a jumble
-
-    // Selected DM/Guild Channel name
-    &[class^='privateChannels'] div[class^='channel'][class*=selected] span,
-    &[class^='nameSelectedText'] {
-        color: #404040 !important;
+    // Hover bullshit.
+    &[class^='channels'] div[class^='scrollerWrap'] {
+        div[class^='wrapper']:hover, div[class^='content']:hover, div[class^='channel']:hover a {
+            background-color: #EBEBEB !important;
+        
+            div[class^='name'], span[class^='name'] {
+                color: #404040 !important;
+            }
+        }
     }
 
-    // Hovered DM/Guild channel name
-    &[class^='privateChannels'] div[class^='channel']:hover a,
-    &[class^='contentHoveredText'] {
-        background-color: #F6F6F6;
-    }
-
-    // Selected DM/Guild channel BG
-    &[class^='privateChannels'] div[class^='channel'][class*='selected'] a,
-    &[class^='contentSelectedText'] {
-        background-color: #EBEBEB;
-    }
-
-    // Make selected channel underlined
-    &[class^='contentSelectedText'] {
-        text-decoration: underline;
-    }
-
-    // DM channel again
-    &[class^='privateChannels'] div[class^='channel'] {
-        // Change hover text and activity text colour
-        &:hover span, div[class^='activityText'] {
+    div[class*='containerDefault'] {
+        div[class^='content'] div[class^='name'] {
             color: #404040;
         }
     }
 
-    // Category hovered and hovered channel name text
-    &[class^='nameHovered'], &[class^='nameHoveredText'] {
-        color: #404040;
-    }
-
-    // Regular channel
-    &[class^='contentDefaultText'] {
-        background-color: white;
-    }
-
-    // Category and regular channel name
-    &[class^='nameDefault'], &[class^='nameDefaultText'] {
-        color: #8C8C8C;
-    }
-
-    // Muted channel background
-    &[class^='contentMutedText'] {
-        background-color: white;
-    }
-
-    // Muted channel name
-    &[class^='nameMutedText'] {
-        color: #D9D9D9;
-    }
-
-    // Unread channel name
-    &[class^='nameUnreadText'] {
-        color: #404040;
-
-        @if $bold-unread-channels {
-            font-weight: 400 !important;
+    // Selected DM/Guild channel BG
+    div[class*='selected'] {
+        div[class^='content'], a {
+            background-color: #EBEBEB !important;
+            
+            div[class^='name'], span[class^='name'] {
+                color: #404040;
+            }
         }
     }
+
+    div[class*='modeUnread'] {
+        div[class^='content'] div[class^='name'] {
+            color: #101010;
+            
+            @if $bold-unread-channels {
+                font-weight: 400 !important;
+            }
+        }
+    }
+
+    div[class*='modeMuted'] {
+        div[class^='content'] div[class^='name'] {
+            color: #a0a0a0;
+        }
+    }
+
 
     // Scrollbar on the right in the chat view
     &[class*='scroller'] {
