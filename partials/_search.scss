@@ -2,3 +2,56 @@
 div[data-block='true'] {
     color: white;
 }
+
+// all search is contained within this div
+div[class^='searchResultsWrap'] {
+    background-color: white;
+
+    // search bar scrollbar
+    div[class*='scroller-']::-webkit-scrollbar-thumb {
+        background-color: $main-colour !important;
+    }
+
+    // search header, with total results and recent/relevant tabs (lol, as if)
+    div[class^='searchHeader'] {
+        //margin-left: 10px;
+
+        // ok, honestly, this looks really really weird if its the main colour
+        // so im setting it to white
+        background-color: white;
+        
+        div[class^='totalResults'] {
+            // I have no clue WHY the fuck this is set to an opacity of 0.3?????
+            // No wonder it's COMPLETELY unreadable on *everything*.
+            opacity: 1;
+        }
+    }
+
+    // the actual results
+    div[class^='resultsWrapper'] {
+        // channel name for multiple-channel searches
+        div[class^='channelSeparator'] {
+
+            // remove ugly as hell random grey
+            span {
+                background-color: white;
+            }
+
+            // this looks... okay? maybe enable later.
+            // text-align: center;
+
+            // fun fact: by default, the random border just goes STRAIGHT THROUGH THE TEXT
+            //（；¬＿¬)
+            &::before {
+                top: 100%;
+            }
+        }
+        
+        // this unfucks most of the horrible fuck-ugly gradients here
+        div[class^='searchResult-'] {
+            &::before, &::after {
+                background: none;
+            }
+        }
+    }
+}
