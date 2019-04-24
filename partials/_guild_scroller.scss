@@ -73,7 +73,6 @@ div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
 
     // Changes the unread mentions count badge to be circular and pink
     div[class*='badgeWrapper'] div[class*='numberBadge'] {
-        border-radius: 10px !important;
         background-color: $main-colour !important;
         color: white;
         font-weight: 600 !important;
