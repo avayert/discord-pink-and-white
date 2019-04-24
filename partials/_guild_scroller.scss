@@ -1,31 +1,36 @@
 div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
+    border-radius: 0;
+
     // MOST IMPORTANT CHANGE
     // Changes the Discord icon to a House at the top of the DM list.
-    svg[name^='Discord'] defs path {
-        // Google icons home icon
-        d: path("M 10 20 v -6 h 4 v 6 h 5 v -8 h 3 L 12 3 L 2 12 h 3 v 8 Z") !important;
-        color: #404040;
+    svg[name^='Nova_Discord'] {
+        path {
+            // Google icons home icon
+            d: path("M 10 20 v -6 h 4 v 6 h 5 v -8 h 3 L 12 3 L 2 12 h 3 v 8 Z") !important;
+            color: #404040;
+        } 
+
+        // offset
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-left: 7px;
+        padding-bottom: 7px;
     }
 
     & {
         border-top: 48px solid $main-colour;
     }
 
-    // Show selected guild even when all channels are
-    div[class^='scroller'] {
-        div[class*='selected']::before {
-            background-color: $main-colour;
-        }
+    // Show the selected guild or unread marker
+    div[class*='pill'] span {
+        background-color: $main-colour;
     }
+    
 
     // Gives the house icon a white background.
-    div[class*='homeButton'] {
+    a[class*='button'] {
         background-color: white !important;
-    }
-
-    // Unread icon
-    div[class^='container'][class*='unread']::before {
-            background-color: $main-colour;
     }
 
     // New [mentions] (arrow up or down) button in guild scroller
@@ -38,8 +43,9 @@ div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
     }
 
     // Changes the background of guild text icons.
-    div[class^='container']:not(:first-child) div[class^='wrapper'] {
+    div[class^='listItem']:not(:first-child) a[class^='wrapper'] div[class^='acronym'] {
         background-color: $main-colour !important;
+        color: #404040;
     }
 
     // Changes the separator between the guilds and the house
@@ -66,9 +72,8 @@ div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
     }
 
     // Changes the unread mentions count badge to be circular and pink
-    div[class*='badge'] {
-        border-radius: 10px !important;
-        background-color: $main-colour;
+    div[class*='badgeWrapper'] div[class*='numberBadge'] {
+        background-color: $main-colour !important;
         color: white;
         font-weight: 600 !important;
     }

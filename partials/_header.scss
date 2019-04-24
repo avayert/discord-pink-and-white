@@ -1,8 +1,83 @@
 // Changes the bar at the top of Discord to be pink
-header[class^='header'], div[class*='headerBar'] {
+div[class^='chat'] div[class*='title'],  // normal chat
+div[class^='channels'] + div[class^='container'] > div[class^='container']  // friends list, etc
+{
     background: $main-colour !important;
     -webkit-box-shadow: 1px 1px white;
     box-shadow: 1px 1px white;
+    
+    div[class^='children'] {
+        // remove dumb @ symbol and padding
+        div[class^='iconWrapper'] {
+            padding: 0;
+            margin: 0;
+
+            svg {
+                display: none;
+            }
+        }
+        // Change header bar to use real @ and # symbols instead of SVGs
+        // This looks a lot less unnatural
+        h3 {
+            // Make channel name white
+            color: white !important;
+
+            // Make it less illegible
+            font-weight: 400 !important;
+
+            &:not([class*='cursorPonter']):before {
+                content: "#";
+            }
+            &[class^='cursorPonter']:before {
+                content: "@";
+            }
+        }
+
+        // Changes the AKA icon in DMs
+        div[class^='aka'] {
+            background-color: rgba(white, 0.4);
+            color: white;
+        }
+
+        // Makes the list of AKA names white
+        div[class^='nicknames'] {
+            color: white;
+        }
+
+        // Fix the button colours
+        div[class^='tabBar'] {
+            div[class*='item'] {
+                &:hover {
+                    background-color: $green;
+                }
+
+                color: white;
+            }
+
+            div[class*='selected'] {
+                background-color: $green-darker !important;
+            }
+        }
+
+        // Make topic text white
+        div[class^='topic'] {
+            color: white;
+        }
+
+        // what the fuck is this
+        &::after {
+            display: none;
+        }
+    }
+
+    div[class^='toolbar'] {
+        // fix svg colours
+        svg path {
+            color: white;
+        }
+
+    }
+
 }
 
 // Changes the search thing in DMs to be pink
@@ -11,11 +86,23 @@ div[class^='privateChannels'] div[class^='searchBar'] {
     background: $main-colour;
     -webkit-box-shadow: none;
     box-shadow:none;
+
+    div[class^='inner'] {
+        background-color: rgba(white, 0.6);
+        
+        input::placeholder {
+            color: white;
+        }
+    }
 }
 
 // Change the right search bar
+div[class^='searchBar'] {
+    background-color: rgba(white, 0.6);
+}
+
 div[class='public-DraftEditorPlaceholder-inner'] {
-    color: rgba(white, 0.6);
+    color: white;
 }
 
 // This is that line to the right of the search box
@@ -26,19 +113,8 @@ div {
     }
 }
 
-// Make the elements on the channel bar white
-span[class^='channelName'], div[class^='topic'] {
-    color: white
-}
-
-// Changes the AKA thingy in DMs
-span[class^='aka'] {
-    background-color: rgba(white, 0.5);
-    color: white;
-}
-
 // The ring that shows you have unread pins
-svg[name='Pin'] + span[class^='iconBadge'],
+svg[name='Nova_Pin'] + span[class^='iconBadge'],
 // Icons in the top bar in chat
 div[class^='titleWrapper'] span[class^='icon'] svg {
     opacity: 0.8 !important;
@@ -47,36 +123,9 @@ div[class^='titleWrapper'] span[class^='icon'] svg {
     }
 }
 
-// Change header bar to use real @ and # symbols instead of SVGs
-// This looks a lot less unnatural
-div {
-    &[class*='headerBar'] span[class*='channelName'] svg {
-        &[name='At'], &[class^='channelIcon-'] {
-            display: none;
-        }
-    }
-    &[class*='headerBar'] span[class*='channelName'] {
-        &:not([tabindex]):before {
-            content: "#";
-        }
-        &[tabindex]:before {
-            content: "@";
-        }
-    }
-}
-
-// Change each header bar SVG colours
-$_svg_names: Pin People Mention PersonPlus NotificationBell Compose;
-
-@each $_svg_name in $_svg_names {
-    svg[name^=#{$_svg_name}] path {
-        color: white;
-    }
-}
-
 // Hide the Call and Video Call icons in the header
 svg {
-    &[name='Phone'], &[name='VideoCamera'] {
+    &[name='Nova_CallJoin'], &[name='Nova_CallVideo'] {
         display: none;
     }
 }
@@ -98,9 +147,15 @@ span {
     }
 }
 
-// Server name
-header span[class^='name'] {
-    @extend %raleway-500;
+// Server box
+header {
+    // Remove terrible box-shadow dropdown
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    span[class^='name'] {
+        @extend %raleway-500;
+    }
 }
 
 // New messages button below header

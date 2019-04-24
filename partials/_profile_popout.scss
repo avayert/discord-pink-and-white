@@ -25,7 +25,8 @@ div[class^='userPopout'] {
             color: rgba(white, 0.7) !important;
         }
 
-        span[class*='botTag'] {
+        span[class^='botTag'] {
+            background-color: rgba(white, 0.7);
             color: $main-colour !important;
             font-weight: 500 !important;
 
