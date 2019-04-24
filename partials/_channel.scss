@@ -102,3 +102,21 @@ span[class*='botTagCozy'] {
     align-self: center;
     padding: 2px;
 }
+
+// Change pinned message popout
+div[class^='messagesPopoutWrap'] {
+    // pin popout has a slight white border that looks a bit unnatural with colours
+    border: none;
+
+    div[class^='header-'] {
+        background-color: $main-colour;
+
+        div[class^='title'] {
+            color: white;
+        }
+    }
+
+    div[class^='footer'] {
+        display: none;
+    }
+}
