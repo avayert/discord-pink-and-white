@@ -52,6 +52,10 @@ div[class^='searchResultsWrap'] {
             &::before, &::after {
                 background: none;
             }
+
+            span.highlight {
+                background-color: rgba($main-colour, 0.3);
+            }
         }
     }
 }
