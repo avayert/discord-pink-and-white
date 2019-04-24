@@ -96,11 +96,6 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
         }
     }
 
-    // Remove STUPID HECKING rounding thing
-    div[class*='base'] {
-        border-radius: 0;
-    }
-
     // Change button colour
     // TODO: Make these configurable
     button[class*='colorGreen'] {
