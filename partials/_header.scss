@@ -54,7 +54,6 @@ div[class^='channels'] + div[class^='container'] > div[class^='container']  // f
     }
 
     div[class^='toolbar'] {
-
         // fix svg colours
         svg path {
             color: white;
@@ -97,8 +96,6 @@ div {
     }
 }
 
-
-
 // The ring that shows you have unread pins
 svg[name='Nova_Pin'] + span[class^='iconBadge'],
 // Icons in the top bar in chat
@@ -133,9 +130,15 @@ span {
     }
 }
 
-// Server name
-header span[class^='name'] {
-    @extend %raleway-500;
+// Server box
+header {
+    // Remove terrible box-shadow dropdown
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    span[class^='name'] {
+        @extend %raleway-500;
+    }
 }
 
 // New messages button below header
