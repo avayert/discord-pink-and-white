@@ -32,14 +32,31 @@ div[class^='channels'] + div[class^='container'] > div[class^='container']  // f
                 content: "@";
             }
         }
-        // Changes the AKA thingy in DMs
+
+        // Changes the AKA icon in DMs
         div[class^='aka'] {
             background-color: rgba(white, 0.4);
             color: white;
         }
 
+        // Makes the list of AKA names white
         div[class^='nicknames'] {
             color: white;
+        }
+
+        // Fix the button colours
+        div[class^='tabBar'] {
+            div[class*='item'] {
+                &:hover {
+                    background-color: #20BF9A;
+                }
+
+                color: white;
+            }
+
+            div[class*='selected'] {
+                background-color: #20BF9A !important;
+            }
         }
 
         // Make topic text white
