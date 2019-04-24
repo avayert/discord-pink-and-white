@@ -103,20 +103,35 @@ span[class*='botTagCozy'] {
     padding: 2px;
 }
 
-// Change pinned message popout
+// Change pinned message & mentions popout
 div[class^='messagesPopoutWrap'] {
-    // pin popout has a slight white border that looks a bit unnatural with colours
+    // popouts have a slight white border that looks a bit unnatural with colours
     border: none;
 
+    // popout header
     div[class^='header-'] {
         background-color: $main-colour;
 
+        // header titles
         div[class^='title'] {
             color: white;
         }
+
+        // tab bar items
+        div[class^='headerTabBarWrapper'] {
+            div[class^='tabBar'], div[class^='mentionFilter'] {
+                color: white !important;
+            }
+        }
     }
 
+    // removes the dumbass footer from the pin menu
     div[class^='footer'] {
+        display: none;
+    }
+
+    // removes the equally dumbass empty placeholder from the mentions menu
+    div[class^='scrollingFooterWrap'] {
         display: none;
     }
 }
