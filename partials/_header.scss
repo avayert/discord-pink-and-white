@@ -3,8 +3,22 @@ div[class^='chat'] div[class*='title'],  // normal chat
 div[class^='channels'] + div[class^='container'] > div[class^='container']  // friends list, etc
 {
     background: $main-colour !important;
-    -webkit-box-shadow: 1px 1px white;
-    box-shadow: 1px 1px white;
+
+    // NOTE FOR FUTURE EXPLORERS:
+    // This makes the header overhang slightly less by making the overhang covered by a white box 
+    // shadow.
+    // 
+    // -webkit-box-shadow: 1px 1px white;
+    // box-shadow: 1px 1px white;
+    //
+    // However, the easier fix is to just make it... not a decimal size.
+    // What is Discord doing, even.
+    // This is exactly as stupid as you think.
+    max-height: 47px;
+
+    // Then we remove the stock box shadow.
+    -webkit-box-shadow: none;
+    box-shadow: none;
     
     div[class^='children'] {
         // remove dumb @ symbol and padding
