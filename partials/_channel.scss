@@ -120,9 +120,15 @@ div[class^='messagesPopoutWrap'] {
         // tab bar items
         div[class^='headerTabBarWrapper'] {
             div[class^='tabBar'], div[class^='mentionFilter'] {
-                color: white !important;
+                &, div[class^='value'] {
+                    color: white !important;
+                }
             }
         }
+    }
+
+    div[style^='border-color: rgb'] {
+        border-color: white !important;
     }
 
     // removes the dumbass footer from the pin menu
