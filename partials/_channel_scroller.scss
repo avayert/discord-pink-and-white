@@ -66,6 +66,22 @@ div {
 
         background-color: $main_colour;
     }
+
+    &[class^='userLimit'] div[class^='wrapper'] span {
+        background-color: #E6E6E6;
+        &:first-child {
+            background-color: #F2F2F2 !important;
+        }
+
+        &[class^='total'] {
+            &:after {
+                border-right-color: #E6E6E6;
+            }
+            &::after {
+                background-color: #F2F2F2;
+            }
+        }
+    }
 }
 
 // Hash signs before channel names
