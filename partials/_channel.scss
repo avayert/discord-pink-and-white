@@ -102,3 +102,85 @@ span[class*='botTagCozy'] {
     align-self: center;
     padding: 2px;
 }
+
+// Change pinned message & mentions popout
+div[class^='messagesPopoutWrap'] {
+    // popouts have a slight white border that looks a bit unnatural with colours
+    border: none;
+
+    // popout header
+    div[class^='header-'] {
+        background-color: $main-colour;
+
+        // header titles
+        div[class^='title'] {
+            color: white;
+        }
+
+        // tab bar items
+        div[class^='headerTabBarWrapper'] {
+            div[class^='tabBar'], div[class^='mentionFilter'] {
+                &, div[class^='value'] {
+                    color: white !important;
+                }
+            }
+        }
+    }
+
+    div[style^='border-color: rgb'] {
+        border-color: white !important;
+    }
+
+    // removes the dumbass footer from the pin menu
+    div[class^='footer'] {
+        display: none;
+    }
+
+    // removes the equally dumbass empty placeholder from the mentions menu
+    div[class^='scrollingFooterWrap'] {
+        display: none;
+    }
+}
+
+// Change "add to group" modal
+div[class*='popoutBottomRight'] div[class^='modal'] {
+
+    // main header
+    div[class*='header'] {
+        background-color: $main-colour;
+        
+        // "select friends" text
+        h4, div[class^='subtitle'] {
+            color: white !important;
+        }
+
+        // fix the inner search bar
+        div[class^='searchBarComponent'] {
+            input::placeholder {
+                color: white;
+            }
+
+            // the users to be added to the DM
+            a[role='button'] {
+                color: white !important;
+                background-color: rgba($main-colour, 0.8);
+            }
+        }
+    }
+
+    // footer only contains this button
+    div[class*='footer-'] {
+        // perhaps this should be enabled? it removes a bit of uselwess whitespace
+        //padding-top: 10px;
+        //padding-bottom: 10px;
+
+        button {
+            background-color: $green;
+
+            // this doesnt seem to work...
+            &::hover {
+                background-color: $green-darker;
+            }
+        }
+    }
+}
