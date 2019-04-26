@@ -8,7 +8,7 @@ div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
             // Google icons home icon
             d: path("M 10 20 v -6 h 4 v 6 h 5 v -8 h 3 L 12 3 L 2 12 h 3 v 8 Z") !important;
             color: #404040;
-        } 
+        }
 
         // offset
         display: block;
@@ -26,7 +26,7 @@ div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
     div[class*='pill'] span {
         background-color: $main-colour;
     }
-    
+
 
     // Gives the house icon a white background.
     a[class*='button'] {
@@ -45,7 +45,7 @@ div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
     // Changes the background of guild text icons.
     div[class^='listItem']:not(:first-child) a[class^='wrapper'] div[class^='acronym'] {
         background-color: $main-colour !important;
-        color: #404040;
+        color: white;
     }
 
     // Changes the separator between the guilds and the house
