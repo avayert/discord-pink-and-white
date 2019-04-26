@@ -3,9 +3,12 @@
 div {
     // Hover bullshit.
     &[class^='channels'] div[class^='scrollerWrap'] {
-        div[class^='wrapper']:hover, div[class^='content']:hover, div[class^='channel']:hover a {
+        div[class^='iconVisibility']:hover > div[class^='content'],
+        div[class^='wrapper']:hover,
+        div[class^='content']:hover,
+        div[class^='channel']:hover a {
             background-color: #EBEBEB !important;
-        
+
             div[class^='name'], span[class^='name'] {
                 color: #404040 !important;
             }
@@ -22,7 +25,7 @@ div {
     div[class*='selected'] {
         div[class^='content'], a {
             background-color: #EBEBEB !important;
-            
+
             div[class^='name'], span[class^='name'] {
                 color: #404040;
             }
@@ -32,7 +35,7 @@ div {
     div[class*='modeUnread'] {
         div[class^='content'] div[class^='name'] {
             color: #101010;
-            
+
             @if $bold-unread-channels {
                 font-weight: 400 !important;
             }
