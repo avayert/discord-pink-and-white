@@ -19,7 +19,7 @@ div[class^='searchResultsWrap'] {
         // ok, honestly, this looks really really weird if its the main colour
         // so im setting it to white
         background-color: white;
-        
+
         div[class^='totalResults'] {
             // I have no clue WHY the fuck this is set to an opacity of 0.3?????
             // No wonder it's COMPLETELY unreadable on *everything*.
@@ -46,7 +46,7 @@ div[class^='searchResultsWrap'] {
                 top: 100%;
             }
         }
-        
+
         // this unfucks most of the horrible fuck-ugly gradients here
         div[class^='searchResult-'] {
             &::before, &::after {
@@ -54,7 +54,8 @@ div[class^='searchResultsWrap'] {
             }
 
             span.highlight {
-                background-color: rgba($main-colour, 0.3);
+                background-color: rgba($main-colour, 0.7);
+                color: white;
             }
         }
     }
