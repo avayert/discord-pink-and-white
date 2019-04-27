@@ -10,7 +10,8 @@
 
 
     .hljs-keyword,
-    .hljs-selector-pseudo {
+    .hljs-selector-pseudo,
+    .hljs-type {
         color: #FF6B81 !important;
     }
 
@@ -49,8 +50,7 @@
     .hljs-link,
     .hljs-quote,
     .hljs-selector-id,
-    .hljs-template-variable,
-    .hljs-type {
+    .hljs-template-variable {
         color: black !important;
     }
 }
