@@ -3,6 +3,20 @@ div[data-block='true'] {
     color: white;
 }
 
+// search bar
+div[class^='DraftEditor-root'] {
+
+    // search input textbox
+    div[class*='public-DraftEditor-content'] {
+        // option blocks e.g. from:/in:
+        div[class^='public-DraftStyleDefault-block'] {
+            span[class^='searchFilter'], span[class^='searchAnswer'] {
+                background-color:$main-colour;
+            }
+        }
+    }
+}
+
 // all search is contained within this div
 div[class^='searchResultsWrap'] {
     background-color: white;
@@ -47,8 +61,8 @@ div[class^='searchResultsWrap'] {
             }
         }
 
-        // this unfucks most of the horrible fuck-ugly gradients here
         div[class^='searchResult-'] {
+            // this unfucks most of the horrible fuck-ugly gradients here
             &::before, &::after {
                 background: none;
             }
