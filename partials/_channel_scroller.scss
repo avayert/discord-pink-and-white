@@ -8,7 +8,12 @@ div {
         div[class^='content']:hover,
         div[class^='channel']:hover a {
             background-color: #EBEBEB !important;
+            div[class^='name'], span[class^='name'] {
+                color: #404040 !important;
+            }
+        }
 
+        div[class^='iconVisibility']:hover {
             div[class^='name'], span[class^='name'] {
                 color: #404040 !important;
             }
