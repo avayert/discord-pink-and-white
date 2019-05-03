@@ -55,4 +55,9 @@ div[class^='userPopout'] {
             color: white !important;
         }
     }
+
+    div[class^='note'] textarea::selection {
+        background-color: rgba($main_colour, 0.7);
+        color: white;
+    }
 }

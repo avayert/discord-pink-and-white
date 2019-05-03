@@ -49,4 +49,9 @@ div[class^='modal'] {
             padding: 2px;
         }
     }
+
+    div[class^='note'] textarea::selection {
+        background-color: rgba($main_colour, 0.7);
+        color: white;
+    }
 }
