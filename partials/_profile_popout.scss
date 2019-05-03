@@ -30,6 +30,12 @@ div[class^='userPopout'] {
             align-self: center;
             padding: 2px;
         }
+
+        // it works don't question it pls
+        *::selection {
+            background-color: white;
+            color: $main-colour;
+        }
     }
 
     // remove useless protip section

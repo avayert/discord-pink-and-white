@@ -16,14 +16,21 @@ div[class^='modal'] {
         background-color: white;
     }
 
-    // fix username/discrim colours
-    div[class*='topSectionNormal'] span[class^='username'] {
-        color: white !important;
-    }
-    div[class*='topSectionNormal'] span[class^='discriminator'] {
-        color: rgba(white, 0.8) !important;
-    }
+    div[class^='nameTag'] {
+        // fix username/discrim colours
+        span[class^='username'] {
+            color: white !important;
+        }
+        span[class^='discriminator'] {
+            color: rgba(white, 0.8) !important;
+        }
 
+        // it works don't question it pls
+        *::selection {
+            background-color: white;
+            color: $main-colour;
+        }
+    }
     // removes all badges (e.g. nitro, partner)
     @if $disable-profile-badges {
         div[class^='profileBadgeWrapper'] {
