@@ -1,13 +1,13 @@
 // Changes the bar at the top of Discord to be pink
-div[class^='chat'] div[class*='title'],  // normal chat
+div[class^='chat']:not([class*='gatedContent']) > div[class*='title'],  // normal chat
 div[class^='channels'] + div[class^='container'] > div[class^='container']  // friends list, etc
 {
     background: $main-colour !important;
 
     // NOTE FOR FUTURE EXPLORERS:
-    // This makes the header overhang slightly less by making the overhang covered by a white box 
+    // This makes the header overhang slightly less by making the overhang covered by a white box
     // shadow.
-    // 
+    //
     // -webkit-box-shadow: 1px 1px white;
     // box-shadow: 1px 1px white;
     //
@@ -19,7 +19,7 @@ div[class^='channels'] + div[class^='container'] > div[class^='container']  // f
     // Then we remove the stock box shadow.
     -webkit-box-shadow: none;
     box-shadow: none;
-    
+
     div[class^='children'] {
         // remove dumb @ symbol and padding
         div[class^='iconWrapper'] {
@@ -103,7 +103,7 @@ div[class^='privateChannels'] div[class^='searchBar'] {
 
     div[class^='inner'] {
         background-color: rgba(white, 0.6);
-        
+
         input::placeholder {
             color: white;
         }
