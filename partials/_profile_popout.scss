@@ -10,6 +10,11 @@ div[class^='userPopout'] {
         }
     }
 
+    // forgot why this was needed (or if it is?)
+    div[class^='headerNameWrapper'] span[class^='headerName'] {
+        color: white !important;
+    }
+
     // make usernames white on the modal popup
     div[class^='headerTag'] {
         span.username {
