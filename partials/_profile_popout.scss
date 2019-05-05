@@ -71,4 +71,9 @@ div[class^='userPopout'] {
         background-color: rgba($main_colour, 0.7);
         color: white;
     }
+
+    // obliterate the quick dm box thingy
+    input {
+        display: none;
+    }
 }
