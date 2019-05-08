@@ -33,7 +33,7 @@ div[class^='modal'] {
     }
     // removes all badges (e.g. nitro, partner)
     @if $disable-profile-badges {
-        div[class^='profileBadgeWrapper'] {
+        div[class*='profileBadges'] {
             display: none;
         }
     }
