@@ -38,12 +38,6 @@ div[class^='modal'] {
         }
     }
 
-    svg {
-        &[name='MobileDevice'] path {
-            color: white !important;
-        }
-    }
-
     div[class*='headerInfo'] {
         span[class^='botTag'] {
             background-color: rgba(white, 0.7);

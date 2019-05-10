@@ -30,6 +30,11 @@ div[class^='accountDetails'] + div[class^='flex'] {
     }
 }
 
+
+svg[name='MobileDevice'] path {
+    color: white !important;
+}
+
 // Change search bar icons
 div[class^='search'] {
     // Magnifying glass

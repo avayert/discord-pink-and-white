@@ -61,12 +61,6 @@ div[class^='userPopout'] {
         }
     }
 
-    svg {
-        &[name='MobileDevice'] path {
-            color: white !important;
-        }
-    }
-
     div[class^='note'] textarea::selection {
         background-color: rgba($main_colour, 0.7);
         color: white;
