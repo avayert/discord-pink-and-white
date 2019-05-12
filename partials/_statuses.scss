@@ -4,6 +4,17 @@
     mask: none;
 }
 
+// Gets rid of the circle the status would be in
+*[class*='mask'] {
+    @extend %_status_mask;
+}
+
+div[class*='status'] {
+    border: 2px solid white;
+    // TODO fix this in DMs
+    border-color: white !important;
+}
+
 // Original: Disable ALL
 @if $disable-statuses {
     // Hides ALL
@@ -11,18 +22,10 @@
         display: none;
     }
 
-    // Gets rid of the circle the status would be in
-    *[class*='mask'] {
-        @extend %_status_mask;
-    }
     // Laura tweak: Disable ALL but top bar
 } @else if $disable-statuses-most {
     div[class*='scroller'] div[class*='status'] {
         display: none;
-    }
-
-    *[class*='mask'] {
-        @extend %_status_mask;
     }
 
     div[class*='status'] {
@@ -32,6 +35,7 @@
             background-color: $green;
         }
     }
+
     .colorblind-mode div[class*='offline'] {
         background-image: none !important;
     }

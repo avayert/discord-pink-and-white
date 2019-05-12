@@ -1,22 +1,40 @@
 // Channel scroller (sidebar)
 
 div {
-    // Hover bullshit.
-    &[class^='channels'] div[class^='scrollerWrap'] {
-        div[class^='iconVisibility']:hover > div[class^='content'],
-        div[class^='wrapper']:hover,
-        div[class^='content']:hover,
-        div[class^='channel']:hover a {
-            background-color: #EBEBEB !important;
-            div[class^='name'], span[class^='name'] {
-                color: #404040 !important;
+    &[class^='channels'] {
+        // Hover bullshit.
+        div[class^='scrollerWrap'] {
+            div[class^='iconVisibility']:hover > div[class^='content'],
+            div[class^='wrapper']:hover,
+            div[class^='content']:hover,
+            div[class^='channel']:hover a {
+                background-color: #EBEBEB !important;
+                div[class^='name'], span[class^='name'] {
+                    color: #404040 !important;
+                }
+            }
+
+            div[class^='iconVisibility']:hover {
+                div[class^='name'], span[class^='name'] {
+                    color: #404040 !important;
+                }
             }
         }
 
-        div[class^='iconVisibility']:hover {
-            div[class^='name'], span[class^='name'] {
-                color: #404040 !important;
+        // Voice nonsense
+        div[class^='container'] {
+            border-bottom: none;
+
+            a[class*='channel'] {
+                color: black !important;
+                opacity: 0.7;
             }
+        }
+
+        // > needed so it doesn't pick random nonsense from
+        // inside the actual channel scroller thingy
+        > div[class^='container']:last-of-type {
+            background-color: white !important;
         }
     }
 
@@ -111,32 +129,14 @@ div[class^='privateChannels'] {
             a[href='/channels/@me'] {
                 display: none;
             }
+
             span header {
                 margin-top: 0px;
             }
-        } @else {
-            span div[class*='channel'] {
-                &:nth-child(1) {
-                    margin-bottom: -15px;
-                    margin-top: 5px;
-                    &:hover div[class*='name'] {
-                        color: #8C8C8C !important;
-                    }
-                }
-                &[class*='selected']:nth-child(1) div[class*='name'],
-                &:nth-child(1):hover div[class*='name'] {
-                    color: #333333 !important;
-                }
-            }
 
-            // Change the waving icon to something else
-            svg[name='PersonWaving'] {
-                padding-bottom: 8px;
-            }
-            svg[name='PersonWaving'] path {
-                // Material icons group
-                d: path("M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z");
-                color: #8C8C8C;
+            &[class*='selected']:nth-child(1) div[class*='name'],
+            &:nth-child(1):hover div[class*='name'] {
+                color: #333333 !important;
             }
         }
     }
