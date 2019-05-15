@@ -9,11 +9,12 @@
     @extend %_status_mask;
 }
 
+/* TODO fix this crap
 div[class*='status'] {
     border: 2px solid white;
-    // TODO fix this in DMs
     border-color: white !important;
 }
+*/
 
 // Original: Disable ALL
 @if $disable-statuses {
