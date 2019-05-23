@@ -9,12 +9,20 @@
     @extend %_status_mask;
 }
 
-/* TODO fix this crap
-div[class*='status'] {
-    border: 2px solid white;
-    border-color: white !important;
+@mixin status-border($colour) {
+    div[class*='status'] {
+        border-color: $colour;
+    }
 }
-*/
+
+div[class^='channel'] {
+    @include status-border(white);
+
+    &:hover,
+    &[class*='selected'] {
+        @include status-border(#EBEBEB);
+    }
+}
 
 // Original: Disable ALL
 @if $disable-statuses {
@@ -23,7 +31,7 @@ div[class*='status'] {
         display: none;
     }
 
-    // Laura tweak: Disable ALL but top bar
+// Laura tweak: Disable ALL but top bar
 } @else if $disable-statuses-most {
     div[class*='scroller'] div[class*='status'] {
         display: none;
