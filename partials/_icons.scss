@@ -7,7 +7,7 @@ div[class^='channels'] div[class^='flex']:last-of-type {
         Mute: $image-mute,
         Deafen: $image-deafen,
         Undeafen: $image-undeafen
-    );
+        );
 
     @each $name, $url in $_image_names {
         button[aria-label='#{$name}'] {
@@ -53,6 +53,12 @@ div[class*='buttonDisconnect'] {
 
 svg[name='MobileDevice'] path {
     color: white !important;
+}
+
+div[class^='memberOnline'] {
+    svg[name='MobileDevice'] path {
+        color: #727272 !important;
+    }
 }
 
 // Change search bar icons
