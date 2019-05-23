@@ -59,6 +59,14 @@ div[class^='memberOnline'] {
     svg[name='MobileDevice'] path {
         color: #727272 !important;
     }
+
+    div[class^='activityText'] {
+        color: #727272;
+    }
+
+    svg[name='RichActivity'] path {
+        fill: #727272;
+    }
 }
 
 // Change search bar icons
