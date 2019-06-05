@@ -19,6 +19,13 @@ div {
                     color: #404040 !important;
                 }
             }
+
+            // remove stupid banner space maker
+            div[class^='scroller'] {
+                div[style*='78px'] {
+                    display: none;
+                }
+            }
         }
 
         // Voice nonsense
