@@ -82,3 +82,15 @@ div[class^='search'] {
         opacity: 0.8 !important;
     }
 }
+
+// change boosting colour
+svg {
+    // icon next to guild name
+    &[class^='premiumGuildIcon-'],
+    // icon in guild settings (Nitro Server Boost tab)
+    &[class^='flowerStar-'] {
+        path {
+           color: $magenta;
+       }
+   }
+}
