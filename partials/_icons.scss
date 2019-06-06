@@ -85,6 +85,8 @@ div[class^='search'] {
 
 // change boosting colour
 svg {
+    // icon in member list
+    &[name='PremiumGuildSubscriberBadge'],
     // icon next to guild name
     &[class^='premiumGuildIcon-'],
     // icon in guild settings (Nitro Server Boost tab)
