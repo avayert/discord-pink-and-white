@@ -110,12 +110,9 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
     // The user info stuff at the bottom
     div[class^='channels'] {
         // The username and discrim */
-        div[class^='accountDetails'] span {
+        div[class*='discriminator'],
+        div[class^='nameTag'] span {
             color: #404040;
-        }
-        // Discrim opacity
-        div[class^='container'] span[class^='discriminator'] {
-            opacity: 0.8;
         }
     }
 }
