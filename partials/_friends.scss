@@ -17,17 +17,28 @@ div [class^='friendsTable'] {
     }
 }
 
+// Changes the [Online | All | Pending | ...] buttons in the friends list
 div[class*='tabBar'] {
+    // make the buttons pink
+    background-color: $main-colour;
+
+    // make the text white
+    div[class*='item'] {
+        color: white;
+    }
+
+    // Add Friend button
     div[class*='primary'] {
+        // make the text white
+        span {
+            color: white;
+        }
+
         background-color: $green !important;
 
         &:hover {
             background-color: $green-darker !important;
         }
-    }
-
-    div[class*='itemDefault'] {
-        color: white;
     }
 }
 

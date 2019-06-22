@@ -75,26 +75,11 @@ div[class^='channels'] + div[class^='container'] > div[class^='container']  // f
                 /*
                 TODO figure out how to get rid of the outline
                 It was none of these:
-                    outline: none !important;
-                    border: none !important;
-                    box-shadow: none !important;
-                    -webkit-box-shadow: none !important;
-                    */
-                }
-            }
-
-        // Fix the button colours
-        div[class^='tabBar'] {
-            div[class*='item'] {
-                &:hover {
-                    background-color: $green;
-                }
-
-                color: white;
-            }
-
-            div[class*='selected'] {
-                background-color: $green-darker !important;
+                outline: none !important;
+                border: none !important;
+                box-shadow: none !important;
+                -webkit-box-shadow: none !important;
+                */
             }
         }
 
