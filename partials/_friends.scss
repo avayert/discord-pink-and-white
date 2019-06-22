@@ -72,11 +72,17 @@ div[class^='privateChannels'] {
         opacity: 1;
     }
 
+
     // Friends button in DM menu
     div[class^='scroller'] {
         // Remove padding above friends button
         & {
             padding-top: 0px !important;
+        }
+
+        // Change pending indicator colour in Friends button
+        div[class*='numberBadge'] {
+            background-color: $main-colour !important;
         }
 
         @if $disable-friends-button {
