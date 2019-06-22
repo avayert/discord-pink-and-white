@@ -135,10 +135,10 @@ div[class='public-DraftEditorPlaceholder-inner'] {
     color: white;
 }
 
-// This is that line to the right of the search box
-// and that line between the channel name and topic text
+// dividers between e.g. the #Friends and buttons, channel name and description, etc.
 div {
-    &[class^='title'] div[class^='divider'], &[class^='topic']::before {
+    div[class^='divider'],
+    &[class^='topic']::before {
         background-color: rgba(white, 0.3);
     }
 }
