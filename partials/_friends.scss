@@ -42,6 +42,7 @@ div[class*='tabBar'] {
     }
 }
 
+// Changes the colour of the Playing X message in friends list
 div[class^='activityText'] {
     color: $dark-gray;
 }
