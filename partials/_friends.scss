@@ -24,7 +24,19 @@ div[class*='tabBar'] {
 
     // make the text white
     div[class*='item'] {
-        color: white;
+        color: white !important;
+
+        // change colour when hovered
+        &:hover {
+            background-color: rgba(white, 0.3) !important;
+        }
+
+        // selected one should be a different colour too.
+        // this should be second because if it's first then the
+        // hover will override this.
+        &[class*='selected'] {
+            background-color: rgba(white, 0.5) !important;
+        }
     }
 
     // Add Friend button
