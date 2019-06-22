@@ -97,18 +97,13 @@ div {
         background-color: $main_colour;
     }
 
+    // Changes the XX/YY indicator on voice channels
     &[class^='userLimit'] div[class^='wrapper'] span {
-        background-color: #E6E6E6;
-        &:first-child {
-            background-color: #F2F2F2 !important;
-        }
+        background-color: $near-white;
 
         &[class^='total'] {
             &:after {
-                border-right-color: #E6E6E6;
-            }
-            &::after {
-                background-color: #F2F2F2;
+                border-right-color: $near-white;
             }
         }
     }
