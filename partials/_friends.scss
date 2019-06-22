@@ -30,3 +30,7 @@ div[class*='tabBar'] {
         color: white;
     }
 }
+
+div[class^='activityText'] {
+    color: #404040;
+}
