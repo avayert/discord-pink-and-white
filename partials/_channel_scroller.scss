@@ -97,38 +97,3 @@ div {
         background-color: $main_colour;
     }
 }
-
-
-/// Private channels only
-div[class^='privateChannels'] {
-
-    // DIRECT MESSAGES text
-    span header {
-        font-weight: 400 !important;
-        color: $dark-gray;
-        opacity: 1;
-    }
-
-    // Friends button in DM menu
-    div[class^='scroller'] {
-        // Remove padding above friends button
-        & {
-            padding-top: 0px !important;
-        }
-
-        @if $disable-friends-button {
-            a[href='/channels/@me'] {
-                display: none;
-            }
-
-            span header {
-                margin-top: 0px;
-            }
-
-            &[class*='selected']:nth-child(1) div[class*='name'],
-            &:nth-child(1):hover div[class*='name'] {
-                color: #333333 !important;
-            }
-        }
-    }
-}

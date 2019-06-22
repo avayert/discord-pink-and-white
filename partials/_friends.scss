@@ -19,10 +19,10 @@ div [class^='friendsTable'] {
 
 div[class*='tabBar'] {
     div[class*='primary'] {
-        background-color: #20BF9A !important;
+        background-color: $green !important;
 
         &:hover {
-            background-color: #1CA585 !important;
+            background-color: $green-darker !important;
         }
     }
 
@@ -33,4 +33,38 @@ div[class*='tabBar'] {
 
 div[class^='activityText'] {
     color: $dark-gray;
+}
+
+/// Private channels only
+div[class^='privateChannels'] {
+
+    // DIRECT MESSAGES text
+    span header {
+        font-weight: 400 !important;
+        color: $gray;
+        opacity: 1;
+    }
+
+    // Friends button in DM menu
+    div[class^='scroller'] {
+        // Remove padding above friends button
+        & {
+            padding-top: 0px !important;
+        }
+
+        @if $disable-friends-button {
+            a[href='/channels/@me'] {
+                display: none;
+            }
+
+            span header {
+                margin-top: 0px;
+            }
+
+            &[class*='selected']:nth-child(1) div[class*='name'],
+            &:nth-child(1):hover div[class*='name'] {
+                color: #333333 !important;
+            }
+        }
+    }
 }
