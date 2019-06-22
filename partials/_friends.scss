@@ -49,6 +49,9 @@ div[class^='activityText'] {
 
 /// Private channels only
 div[class^='privateChannels'] {
+    // without this there is a white line between the friends list
+    // and direct messages list
+    margin-right: -1px;
 
     // DIRECT MESSAGES text
     span header {

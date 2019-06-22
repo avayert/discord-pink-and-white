@@ -104,6 +104,12 @@ div[class^='channels'] + div[class^='container'] > div[class^='container']  // f
 
 }
 
+// for some ungodly reason this needs to be 1px more
+div[class^='channels'] + div[class^='container'] > div[class^='container'] {
+    max-height: 48px;
+}
+
+
 // Changes the search thing in DMs to be pink
 // This needs to be separate because lol discord
 div[class^='privateChannels'] div[class^='searchBar'] {
