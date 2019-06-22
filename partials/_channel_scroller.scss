@@ -8,15 +8,15 @@ div {
             div[class^='wrapper']:hover,
             div[class^='content']:hover,
             div[class^='channel']:hover a {
-                background-color: #EBEBEB !important;
+                background-color: $lightest-gray !important;
                 div[class^='name'], span[class^='name'] {
-                    color: #404040 !important;
+                    color: $dark-gray !important;
                 }
             }
 
             div[class^='iconVisibility']:hover {
                 div[class^='name'], span[class^='name'] {
-                    color: #404040 !important;
+                    color: $dark-gray !important;
                 }
             }
 
@@ -54,10 +54,10 @@ div {
     // Selected DM/Guild channel BG
     div[class*='selected'] {
         div[class^='content'], a {
-            background-color: #EBEBEB !important;
+            background-color: $lightest-gray !important;
 
             div[class^='name'], span[class^='name'], svg {
-                color: #404040 !important;
+                color: $dark-gray !important;
             }
         }
     }
@@ -121,7 +121,7 @@ div[class^='privateChannels'] {
     // DIRECT MESSAGES text
     span header {
         font-weight: 400 !important;
-        color: #404040;
+        color: $dark-gray;
         opacity: 1;
     }
 

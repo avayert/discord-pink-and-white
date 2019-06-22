@@ -16,7 +16,7 @@ div[class^='messageGroupBlocked-'] {
 
     // Lines to the left and right of the button
     &::before, &::after {
-        background-color: #F6F6F6;
+        background-color: $near-white;
 
         // Make sure they are visible
         content: "";

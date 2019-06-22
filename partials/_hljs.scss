@@ -1,11 +1,11 @@
 // Custom HLJS theme.
 @if $custom-hljs {
     .hljs {
-        color: #727272 !important;
+        color: $gray !important;
     }
 
     .hljs-comment {
-        color: #8C8C8C !important;
+        color: $light-gray !important;
     }
 
 

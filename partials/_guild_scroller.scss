@@ -7,7 +7,7 @@ div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
         path {
             // Google icons home icon
             d: path("M 10 20 v -6 h 4 v 6 h 5 v -8 h 3 L 12 3 L 2 12 h 3 v 8 Z") !important;
-            color: #404040;
+            color: $dark-gray;
         }
 
         // offset
@@ -50,24 +50,24 @@ div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
 
     // Changes the separator between the guilds and the house
     div[class^='guildSeparator']::after {
-        background-color: #404040;
+        background-color: $dark-gray;
     }
 
     // Makes the friends online text readable
     div[class^='friendsOnline'] {
-        color: #404040;
+        color: $dark-gray;
         font-weight: 400 !important;
     }
 
     // Changes the guilds add button to be white
     div[class^='circleIconButton'] {
         background-color: white;
-        border: 2px solid #EBEBEB;
-        color: #8C8C8C;
+        border: 2px solid $lightest-gray;
+        color: $light-gray;
 
         &:hover {
             color: #333333;
-            border-color: #D9D9D9;
+            border-color: $lighter-gray;
         }
     }
 

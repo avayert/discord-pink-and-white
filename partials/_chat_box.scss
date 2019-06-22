@@ -7,21 +7,21 @@ div[class^='channelTextArea'] {
     div[class^='inner'] {
         // Changes the background slightly.
         & {
-            background-color: #F6F6F6;
+            background-color: $near-white;
         }
 
         // Changes the text area text colour.
         textarea {
-            color: #8C8C8C;
+            color: $light-gray;
 
             &::placeholder {
-                color: #D9D9D9;
+                color: $lighter-gray;
             }
         }
 
         // Changes the attach button
         div[class*='attachButtonInner'] svg path {
-            fill: #D9D9D9;
+            fill: $lighter-gray;
         }
     }
 }

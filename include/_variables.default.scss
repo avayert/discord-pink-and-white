@@ -1,7 +1,5 @@
-// This file is used to define certain variables.
+// This file is used to define certain global variables.
 
-
-// Main colour (default: #FF6B81)
 $main-colour: #FF6B81;
 
 $green: #20BF9A;
@@ -9,8 +7,13 @@ $green-darker: #1CA585;
 
 $magenta: #BA4EF5;
 
-// Hyperlink colour (default: same as main colour)
+$near-white: #F6F6F6;
+$lightest-gray: #EBEBEB;
+$lighter-gray: #D9D9D9;
+$light-gray: #8C8C8C;
+$gray: #727272;
+$dark-gray: #404040;
+
 $hyperlink-colour: $main-colour;
 
-// Mention colour (default: same as main colour)
 $mention-colour: $main-colour;

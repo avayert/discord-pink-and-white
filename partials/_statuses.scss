@@ -20,7 +20,7 @@ div[class^='channel'] {
 
     &:hover,
     &[class*='selected'] {
-        @include status-border(#EBEBEB);
+        @include status-border($lightest-gray);
     }
 }
 

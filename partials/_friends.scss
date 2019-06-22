@@ -12,7 +12,7 @@ div [class^='friendsTable'] {
 
         &:hover {
             box-shadow: none !important;
-            background-color: #F6F6F6;
+            background-color: $near-white;
         }
     }
 }
@@ -32,5 +32,5 @@ div[class*='tabBar'] {
 }
 
 div[class^='activityText'] {
-    color: #404040;
+    color: $dark-gray;
 }

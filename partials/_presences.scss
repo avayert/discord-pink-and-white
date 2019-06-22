@@ -13,8 +13,8 @@
     // DM rich presence icon
     div[class^='privateChannels'] div[class^='channel'] {
         path[class^='activityIconForeground'], &:hover path[class^='activityIconForeground'] {
-            fill: #404040;
-            color: #404040;
+            fill: $dark-gray;
+            color: $dark-gray;
         }
     }
 

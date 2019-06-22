@@ -4,7 +4,7 @@
 div[class^='hasMore'] button {
     background-color: white;
     color: $main-colour;
-    border: 1px solid #F6F6F6;
+    border: 1px solid $near-white;
 }
 
 // Code block fonts
@@ -21,7 +21,7 @@ div[class^='markup'] pre {
 // Inline code blocks
 div[class^='markup'] code {
     &, &.inline {
-      background-color: #F6F6F6 !important;
+      background-color: $near-white !important;
     }
 }
 
@@ -34,7 +34,7 @@ span[class^='spoilerText'] {
         font-weight: 400 !important;
 
         code {
-            color: #404040;
+            color: $dark-gray;
         }
     }
 }
@@ -69,7 +69,7 @@ span[class^='spoilerText'] {
 
 // Makes message text darker.
 div[class^='markup'] {
-    color: #404040;
+    color: $dark-gray;
 }
 
 // Removes the message divider.
@@ -148,7 +148,7 @@ div[class*='popoutBottomRight'] div[class^='modal'] {
     // main header
     div[class*='header'] {
         background-color: $main-colour;
-        
+
         // "select friends" text
         h4, div[class^='subtitle'] {
             color: white !important;
