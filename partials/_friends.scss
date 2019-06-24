@@ -18,7 +18,7 @@ div [class^='friendsTable'] {
 }
 
 // Changes the [Online | All | Pending | ...] buttons in the friends list
-div[class*='tabBar'] {
+div[class*='divider'] + div[class*='tabBar'] {
     // make the buttons pink
     background-color: $main-colour;
 
