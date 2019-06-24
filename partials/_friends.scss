@@ -54,11 +54,6 @@ div[class*='divider'] + div[class*='tabBar'] {
     }
 }
 
-// Changes the colour of the Playing X message in friends list
-div[class^='activityText'] {
-    color: $dark-gray;
-}
-
 /// Private channels only
 div[class^='privateChannels'] {
     // without this there is a white line between the friends list
@@ -75,6 +70,17 @@ div[class^='privateChannels'] {
         opacity: 1;
     }
 
+    a {
+        div[class*='activity'] {
+            color: $gray;
+        }
+
+        &:hover {
+            div[class*='activity'] {
+                color: $dark-gray;
+            }
+        }
+    }
 
     // Friends button in DM menu
     div[class^='scroller'] {
