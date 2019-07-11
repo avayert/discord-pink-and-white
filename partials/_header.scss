@@ -4,6 +4,8 @@ div[class^='channels'] + div[class^='container'] > div[class^='container']  // f
 {
     background: $main-colour !important;
 
+    height: 48px;
+
     // Then we remove the stock box shadow.
     -webkit-box-shadow: none;
     box-shadow: none;
