@@ -207,3 +207,10 @@ div[class^='searchBarInner'] {
         color: rgba(white, 0.6);
     }
 }
+
+// dumb shit
+div[class*='privateChannels-'] div[class*='searchBar-'],
+div[class*='container-'] header[class*='header-'] {
+    height: 48px !important;
+}
+
