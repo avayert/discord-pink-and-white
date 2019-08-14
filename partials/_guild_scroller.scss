@@ -1,4 +1,4 @@
-div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
+div[class*='flex'] div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
     border-radius: 0;
 
     // MOST IMPORTANT CHANGE
