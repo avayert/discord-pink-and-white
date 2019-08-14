@@ -71,10 +71,29 @@ div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
         }
     }
 
+
     // Changes the unread mentions count badge to be circular and pink
     div[class*='badgeWrapper'] div[class*='numberBadge'] {
         background-color: $main-colour !important;
         color: white;
         font-weight: 600 !important;
+    }
+
+
+    // the colour when the folder is open
+    span[class^='expandedFolderBackground'] {
+        background-color: $lightest-gray;
+    }
+
+    // the colour behind the folder icon
+    div[class*='folder'] {
+        background-color: $lighter-gray;
+    }
+
+    // when a guild has no icon and is inside a folder
+    div[class*='closedFolderIconWrapper'] {
+        div[class*='noIcon'] {
+            background-color: $main-colour;
+        }
     }
 }
