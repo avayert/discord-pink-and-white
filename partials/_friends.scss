@@ -71,6 +71,11 @@ div[class^='privateChannels'] {
     }
 
     a {
+        &[class*='channel'] {
+            color: $gray !important;
+        }
+
+
         div[class*='activity'] {
             color: $gray;
         }
