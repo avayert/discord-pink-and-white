@@ -42,7 +42,7 @@ span[class^='spoilerText'] {
 // Allow overriding fonts
 @if $override-channel-fonts {
     // Body font override
-    div[class^="messageCozy"] div[class^="markup"] {
+    div[class^="containerCozy"] div[class^="markup"] {
         &, span, em, strong, s, a {
             font-family: $override-channel-fonts-text;
         }

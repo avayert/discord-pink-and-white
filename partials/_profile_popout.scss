@@ -17,11 +17,12 @@ div[class^='userPopout'] {
 
     // make usernames white on the modal popup
     div[class^='headerText'] {
-        span.username {
+        // rip, the last unfucked tag name
+        span[class^='username'] {
             color: white !important;
         }
 
-        span.discriminator {
+        span[class^='username'] + span {
             color: rgba(white, 0.7) !important;
         }
 

@@ -1,5 +1,5 @@
 div[class*='flex'] div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
-    border-radius: 0;
+
 
     // MOST IMPORTANT CHANGE
     // Changes the Discord icon to a House at the top of the DM list.
@@ -29,7 +29,7 @@ div[class*='flex'] div[role^='dialog'] > div[class^='flex'] > [class*='wrapper']
 
 
     // Gives the house icon a white background.
-    a[class*='button'] {
+    a[class*='wrapper'] {
         background-color: white !important;
     }
 

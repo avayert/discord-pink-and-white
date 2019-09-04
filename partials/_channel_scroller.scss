@@ -6,7 +6,6 @@ div {
         div[class^='scrollerWrap'] {
             div[class^='iconVisibility']:hover > div[class^='content'],
             div[class^='wrapper']:hover,
-            div[class^='content']:hover,
             div[class^='channel']:hover a {
                 background-color: $lightest-gray !important;
                 div[class^='name'], span[class^='name'] {
@@ -40,7 +39,7 @@ div {
 
         // > needed so it doesn't pick random nonsense from
         // inside the actual channel scroller thingy
-        > div[class^='container']:last-of-type {
+        > div[class^='panels']:last-of-type {
             background-color: white !important;
         }
     }

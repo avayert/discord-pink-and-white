@@ -75,6 +75,12 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
     // Custom tweaks
     @import "custom.scss";
 
+    // remove main object rounded border
+    div[class*='flex'] div[class*='base'] {
+        border-radius: 0;
+    }
+    
+
 
     /// Misc tweaks!
     // Changes most backgrounds to be white

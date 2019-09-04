@@ -168,8 +168,9 @@ header {
     -webkit-box-shadow: none;
     box-shadow: none;
 
-    span[class^='name'] {
+    h1[class^='name'] {
         @extend %raleway-500;
+        color: white;
     }
 }
 
