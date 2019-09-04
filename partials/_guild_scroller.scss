@@ -72,12 +72,16 @@ div[class*='flex'] div[role^='dialog'] > div[class^='flex'] > [class*='wrapper']
     }
 
 
-    // Changes the unread mentions count badge to be circular and pink
-    div[class*='badgeWrapper'] div[class*='numberBadge'] {
-        background-color: $main-colour !important;
-        color: white;
-        font-weight: 600 !important;
+    div[class^='listItem'] {
+        // Changes the unread mentions count badge to be circular and pink
+        div[class*='badgeWrapper'] div[class*='numberBadge'] {
+            background-color: $main-colour !important;
+            color: white;
+            font-weight: 600 !important;
+            border-radius: 50%
+        }
     }
+
 
 
     // the colour when the folder is open
