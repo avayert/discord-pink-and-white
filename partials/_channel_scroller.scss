@@ -42,68 +42,68 @@ div {
         > div[class^='panels']:last-of-type {
             background-color: white !important;
         }
+
+        // Selected DM/Guild channel BG
+        div[class*='selected'] {
+            div[class^='content'], a {
+                background-color: $lightest-gray !important;
+
+                div[class^='name'], span[class^='name'], svg {
+                    color: $dark-gray !important;
+                }
+            }
+        }
+
+        div[class*='modeUnread'] {
+            div[class^='content'] div[class^='name'] {
+                color: #101010;
+    
+                @if $bold-unread-channels {
+                    font-weight: 400 !important;
+                }
+            }
+        }
+    
+        div[class*='modeMuted'] {
+            div[class^='content'] div[class^='name'], svg {
+                color: #a0a0a0 !important;
+            }
+        }
+    
+    
+        // Scrollbar on the right in the chat view
+        &[class*='scroller'] {
+            &[class*='messages']::-webkit-scrollbar-thumb {
+                background-color: $main_colour !important;
+            }
+    
+            &[class*='friendsTableBody']::-webkit-scrollbar-thumb {
+                background-color: $main_colour !important;
+            }
+        }
+    
+        // NEW UNREADS button
+        &[class*='unread'] div[class^='bar'] {
+            box-shadow: none !important;
+    
+            background-color: $main_colour;
+        }
+    
+        // Changes the XX/YY indicator on voice channels
+        &[class^='userLimit'] div[class^='wrapper'] span {
+            background-color: $near-white;
+    
+            &[class^='total'] {
+                &:after {
+                    border-right-color: $near-white;
+                }
+            }
+        }
     }
 
     div[class*='containerDefault'] {
         div[class^='content'] div[class^='name'], svg {
             color: #666666;
-        }
-    }
-
-    // Selected DM/Guild channel BG
-    div[class*='selected'] {
-        div[class^='content'], a {
-            background-color: $lightest-gray !important;
-
-            div[class^='name'], span[class^='name'], svg {
-                color: $dark-gray !important;
-            }
-        }
-    }
-
-    div[class*='modeUnread'] {
-        div[class^='content'] div[class^='name'] {
-            color: #101010;
-
-            @if $bold-unread-channels {
-                font-weight: 400 !important;
-            }
-        }
-    }
-
-    div[class*='modeMuted'] {
-        div[class^='content'] div[class^='name'], svg {
-            color: #a0a0a0 !important;
-        }
-    }
-
-
-    // Scrollbar on the right in the chat view
-    &[class*='scroller'] {
-        &[class*='messages']::-webkit-scrollbar-thumb {
-            background-color: $main_colour !important;
-        }
-
-        &[class*='friendsTableBody']::-webkit-scrollbar-thumb {
-            background-color: $main_colour !important;
-        }
-    }
-
-    // NEW UNREADS button
-    &[class*='unread'] div[class^='bar'] {
-        box-shadow: none !important;
-
-        background-color: $main_colour;
-    }
-
-    // Changes the XX/YY indicator on voice channels
-    &[class^='userLimit'] div[class^='wrapper'] span {
-        background-color: $near-white;
-
-        &[class^='total'] {
-            &:after {
-                border-right-color: $near-white;
-            }
         }
     }
 }
