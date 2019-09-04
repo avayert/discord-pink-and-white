@@ -7,6 +7,11 @@ div[class^='hasMore'] button {
     border: 1px solid $near-white;
 }
 
+// Jump to present bar
+div[class^='jumpToPresentBar'] {
+    background-color: $main-colour;
+}
+
 // Code block fonts
 .hljs, span[class^='hljs'] {
     font-family: 'Fira Code' !important;
