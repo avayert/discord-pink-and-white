@@ -56,6 +56,7 @@ span[class^='spoilerText'] {
     // Header font override
     span[class^="username-"] {
         font-family: $override-channel-fonts-username;
+        font-weight: 400 !important;
     }
 
     // Code block override
