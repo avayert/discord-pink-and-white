@@ -1,3 +1,8 @@
+%raleway-500 {
+    font-family: 'Raleway';
+    font-weight: 500 !important;
+}
+
 // Changes the bar at the top of Discord to be pink
 div[class^='chat']:not([class*='gatedContent']) > div[class*='title'],  // normal chat
 div[class^='sidebar'] + div[class^='container'] > div[class^='container']  // friends list, etc
@@ -90,78 +95,64 @@ div[class^='sidebar'] + div[class^='container'] > div[class^='container']  // fr
             color: white;
         }
     }
-}
 
-
-// Changes the search thing in DMs to be pink
-// This needs to be separate because lol discord
-div[class^='privateChannels'] div[class^='searchBar'] {
-    background: $main-colour;
-    -webkit-box-shadow: none;
-    box-shadow:none;
-
-    div[class^='inner'] {
-        background-color: rgba(white, 0.6);
-
-        input::placeholder {
-            color: white;
+    // dividers between e.g. the #Friends and buttons, channel name and description, etc.
+    div {
+        div[class^='divider'],
+        &[class^='topic']::before {
+            background-color: rgba(white, 0.3);
         }
     }
-}
 
-// Change the right search bar
-div[class^='searchBar'] {
-    background-color: rgba(white, 0.6);
-}
-
-div[class='public-DraftEditorPlaceholder-inner'] {
-    color: white;
-}
-
-// dividers between e.g. the #Friends and buttons, channel name and description, etc.
-div {
-    div[class^='divider'],
-    &[class^='topic']::before {
-        background-color: rgba(white, 0.3);
+    // Change the right search bar
+    div[class^='searchBar'] {
+        background-color: rgba(white, 0.6);
     }
-}
 
-// The ring that shows you have unread pins
-svg[name='Nova_Pin'] + span[class^='iconBadge'],
-// Icons in the top bar in chat
-div[class^='titleWrapper'] span[class^='icon'] svg {
-    opacity: 0.8 !important;
-    &:hover {
-        opacity: 1 !important;
+    div[class='public-DraftEditorPlaceholder-inner'] {
+        color: white;
     }
-}
+    
+    // The ring that shows you have unread pins
+    svg[name='Nova_Pin'] + span[class^='iconBadge'],
+    // Icons in the top bar in chat
+    div[class^='titleWrapper'] span[class^='icon'] svg {
+        opacity: 0.8 !important;
+        &:hover {
+            opacity: 1 !important;
+        }
+    }
 
-// Hide the Call and Video Call icons in the header
-svg {
-    &[name='Nova_CallJoin'], &[name='Nova_CallVideo'] {
+    // Hide the Call and Video Call icons in the header
+    svg {
+        &[name='Nova_CallJoin'], &[name='Nova_CallVideo'] {
+            display: none;
+        }
+    }
+
+    // Remove question mark icon
+    a[href='https://support.discordapp.com'] {
         display: none;
     }
+
 }
 
-// Remove question mark icon
-a[href='https://support.discordapp.com'] {
-    display: none;
-}
-
-%raleway-500 {
-    font-family: 'Raleway';
-    font-weight: 500 !important;
-}
-
-// Changes font on usernames and channel names at the top
-span {
-    &[class^='username'], &[class^='channelName'] {
-        @extend %raleway-500;
-    }
-}
-
-// Server box
+// Server box sidebar or friends list sidebar.
 div[class^='sidebar'] {
+    div[class^='privateChannels'] div[class^='searchBar'] {
+        background: $main-colour;
+        -webkit-box-shadow: none;
+        box-shadow:none;
+    
+        div[class^='inner'] {
+            background-color: rgba(white, 0.6);
+    
+            input::placeholder {
+                color: white;
+            }
+        }
+    }
+    
     header {
         // Remove terrible box-shadow dropdown
         -webkit-box-shadow: none;
@@ -193,20 +184,6 @@ div[class^='sidebar'] {
                 color: white;
             }
         }
-    }
-}
-
-// Change the left search bar
-div[class^='searchBarInner'] {
-    & {
-        background-color: rgba(white, 0.5) !important;
-        box-shadow: none !important;
-        -webkit-box-shadow: none !important;
-    }
-
-    // Left search bar text
-    input::placeholder {
-        color: rgba(white, 0.6);
     }
 }
 

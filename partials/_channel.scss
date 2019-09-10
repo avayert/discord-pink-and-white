@@ -84,6 +84,17 @@ div[class^='markup'] {
     }
 }
 
+// Makes new messages divider the main colour.
+div[class*='dividerRed'] {
+    color: $main-colour !important;
+
+    span[class^='dividerContent'] {
+        &::before, &::after {
+            background-color: $main-colour;
+        }
+    }
+}
+
 @if $remove-emoji-borders {
     .emoji {
         margin-left: 0 !important;
