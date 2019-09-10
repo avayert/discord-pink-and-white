@@ -14,6 +14,8 @@ div[class*='guilds'] {
         height: 100%;
         padding-left: 7px;
         padding-bottom: 7px;
+
+        background-color: white;
     }
 
     & {
@@ -23,12 +25,6 @@ div[class*='guilds'] {
     // Show the selected guild or unread marker
     div[class*='pill'] span {
         background-color: $main-colour;
-    }
-
-
-    // Gives the house icon a white background.
-    a[class*='wrapper'] {
-        background-color: white !important;
     }
 
     // New [mentions] (arrow up or down) button in guild scroller
@@ -78,9 +74,11 @@ div[class*='guilds'] {
             font-weight: 600 !important;
             border-radius: 50%
         }
+
+        a[class*='selected'] div[class^='childWrapper'] {
+            background-color: $main-colour;
+        }
     }
-
-
 
     // the colour when the folder is open
     span[class^='expandedFolderBackground'] {
