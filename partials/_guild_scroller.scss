@@ -67,14 +67,17 @@ div[class*='guilds'] {
 
 
     div[class^='listItem'] {
-        // Changes the unread mentions count badge to be circular and pink
-        div[class*='badgeWrapper'] div[class*='numberBadge'] {
-            background-color: $main-colour !important;
-            color: white;
-            font-weight: 600 !important;
-            border-radius: 50%
+        div[class*='badgeWrapper'] {
+            // Changes the unread mentions count badge to be circular and pink
+            div[class*='numberBadge'], div[class*='iconBadge'] {
+                background-color: $main-colour !important;
+                color: white;
+                font-weight: 600 !important;
+                border-radius: 50%
+            }
         }
 
+        // make selected text guilds have a pink bg
         a[class*='selected'] div[class^='childWrapper'] {
             background-color: $main-colour;
         }
