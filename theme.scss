@@ -100,13 +100,13 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
             background-color: white;
         }
 
+        // makes manky bit at bottom white
         &[class^='sidebar'] div[class^='container'] {
             background-color: white;
         }
     }
 
     // Change button colour
-    // TODO: Make these configurable
     button[class*='colorGreen'] {
         background-color: $green;
         color: white;  // not included in theme.css?
@@ -115,13 +115,16 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
     button[class*='colorGreen']:hover {
         background-color: $green-darker;
     }
+    
 
-    // The user info stuff at the bottom
-    div[class^='channels'] {
-        // The username and discrim */
-        div[class*='discriminator'],
-        div[class^='nameTag'] span {
-            color: #404040;
-        }
+
+}
+
+// For some reason, these aren't grouped under the main .theme-light.
+// But, we select on .theme-light as the sibling, so this won't affect dark theme.
+.theme-light + div[class^='layerContainer'] {
+    // misc popouts
+    header {
+        background-color: $main-colour
     }
 }
