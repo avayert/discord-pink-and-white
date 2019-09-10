@@ -1,6 +1,4 @@
-div[class*='flex'] div[role^='dialog'] > div[class^='flex'] > [class*='wrapper'] {
-
-
+div[class*='guilds'] {
     // MOST IMPORTANT CHANGE
     // Changes the Discord icon to a House at the top of the DM list.
     svg[name^='Nova_Discord'] {
