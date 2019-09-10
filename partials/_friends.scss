@@ -40,7 +40,7 @@ div[class*='divider'] + div[class*='tabBar'] {
     }
 
     // Add Friend button
-    div[class*='primary'] {
+    div:last-of-type {
         // make the text white
         span {
             color: white;
