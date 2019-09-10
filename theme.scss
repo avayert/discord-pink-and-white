@@ -79,7 +79,6 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
     div[class*='flex'] div[class*='base'] {
         border-radius: 0;
     }
-    
 
 
     /// Misc tweaks!
@@ -98,6 +97,10 @@ https://creativecommons.org/licenses/by-sa/4.0/ */
             }
         }
         &[class^='scrollerWrap'] {
+            background-color: white;
+        }
+
+        &[class^='sidebar'] div[class^='container'] {
             background-color: white;
         }
     }
