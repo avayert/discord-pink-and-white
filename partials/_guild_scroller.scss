@@ -67,7 +67,7 @@ div[class*='guilds'] {
 
 
     div[class^='listItem'] {
-        div[class*='badgeWrapper'] {
+        div[class*='lowerBadge'] {
             // Changes the unread mentions count badge to be circular and pink
             div[class*='numberBadge'], div[class*='iconBadge'] {
                 background-color: $main-colour !important;
