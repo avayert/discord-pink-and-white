@@ -153,7 +153,8 @@ div[class^='sidebar'] {
         }
     }
     
-    header {
+    // guild header, hacky but it'll do for
+    div[class^='container'] > div[class^='container'] header {
         // Remove terrible box-shadow dropdown
         -webkit-box-shadow: none;
         box-shadow: none;
@@ -163,11 +164,7 @@ div[class^='sidebar'] {
             color: white;
         }
 
-        background-color: $main-colour;
-
-        &:hover {
-            background-color: $main-colour;
-        }
+        background-color: $main-colour !important;
     }
 
     // New messages button below header
@@ -188,8 +185,8 @@ div[class^='sidebar'] {
 }
 
 // dumb shit
-div[class*='privateChannels-'] div[class*='searchBar-'],
-div[class*='container-'] header[class*='header-'] {
-    height: 48px !important;
-}
+//div[class*='privateChannels-'] div[class*='searchBar-'],
+//div[class*='container-'] header[class*='header-'] {
+//    height: 48px !important;
+//}
 
