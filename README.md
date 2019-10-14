@@ -7,7 +7,7 @@ This is a theme for **light theme** only; the changes will not exist on dark the
 
 ## Installation
 
-1) `npm install -g sass`
+1) Install [Sass](https://sass-lang.com/install)
 2) `sass theme.scss theme.css`
 3) Point BeautifulDiscord at your theme.css
 
